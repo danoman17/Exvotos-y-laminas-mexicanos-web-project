@@ -3,12 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/fdd2e8457c.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/EstilosPaginaInicio.css">
-	
+
 	<title>ExvotosMexicanos</title>
 </head>
 <body>
+
+		
 	<header>
 		<div class="contenedor">
 			<div class="logo izquierda">
@@ -17,25 +20,30 @@
 			</div>
 			<div class="derecha">
 				<ul>
-					<li><a href="#"><i class="icono fas fa-home"></i>Inicio</a></li>
-					<li><a href="#"><i class="icono far fa-user"></i>Sobre mi</a></li>
-					<li><a href="#"><i class="icono fas fa-map-marker-alt"></i>Ubicación</a></li>
-					<li><a href="#"><i class="icono fas fa-inbox"></i>Contacto</a></li>
-					<li><a href="#"><i class="icono fas fa-palette"></i>Catálogo</a></li>
+					<li><a href="#" id="btn-home"><i class="icono fas fa-home"></i>Inicio</a></li>
+					<li><a href="#" id="btn-sobremi"><i class="icono far fa-user"></i>Sobre mi</a></li>
+					<li><a href="#" id="btn-ubiacacion"><i class="icono fas fa-map-marker-alt"></i>Ubicación</a></li>
+					<li><a href="#" id="btn-contacto"><i class="icono fas fa-inbox"></i>Contacto</a></li>
+					<li><a href="#" id="btn-catalogo"><i class="icono fas fa-palette"></i>Catálogo</a></li>
 				</ul>
 			</div>
 		</div>
 	</header>
 
-		<div class="seccion1">
+
+
+		<div class="seccion1" id="Primera-seccion">
 
 			<div class="hoja1">
-			<div class="intro">
+			<div class="intro" >
 				<div class="contenido_intro">
-					<h1>Exvotos y Laminas Mexicanos</h1>
+					<h1>Exvotos y Láminas Mexicanos</h1>
 					<p>
-						Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Ipsam optio culpa dolor nihil soluta deserunt, aspernatur nisi, commodi explicabo laborum! Quidem reprehenderit ipsum et fugiat suscipit omnis in dicta optio.
-						Incidunt explicabo atque, iste nostrum. Error laudantium eaque mollitia dolore sit odit obcaecati, eos inventore earum necessitatibus reiciendis quos facilis, impedit tempore possimus explicabo magnam numquam! Earum, eos. Autem, nisi.
+						Se sabe que los exvotos son tan antiguos como la civilización egipcia y que al menos en nuestra historia se ha practicado 
+						desde épocas precolombinas, aunque no bajo la misma denominación. Se le llama exvoto, a  toda clase de ofrendas a los dioses,
+						vírgenes o santos, en agradecimiento por la ayuda brindada para resolver algún problema, una enfermedad o una situación de peligro. Es una 
+						manera de manifestar que estamos conscientes de que seres numinosos cercanos a Dios han intercedido por nosotros para crear lo que se 
+						concibe como un milagro.
 					</p>
 				</div>
 			</div>
@@ -45,7 +53,7 @@
 				<div class="caja2"></div>
 			</div>
 		</div>
-		<a href="#" class="boton1">
+		<a href="#" class="boton1" id="btn-1">
 			<div><i class="fas fa-chevron-down"></i></div>
 		</a>
 		</div>
@@ -60,11 +68,13 @@
 						<div class="sobremi">
 							<h2>Sobre mí</h2>
 							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe illum consectetur possimus maiores architecto omnis deserunt libero. Quibusdam deserunt quam commodi eos quisquam dicta nemo at sint, sequi illum tenetur.
-								Dolores id, fugit impedit ut rem magnam omnis ipsum facere Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Ex non corporis, iusto dolorum cupiditate expedita.
+								Mary Pearson nació en Barnstaple, al sudoeste de Inglaterra en el año 1985. 
+								Se crió cerca del mar y cerca de dos parques nacionales, y su amor por el paisaje natural creció enormemente. 
+								A lo largo de su vida, Mary siempre se ha sentido fascinada por las imágenes y cómo se representa el mundo por medio de los ojos
+								 de otros, así que naturalmente, se sintió atraída por la fotografía.
 							</p>
 
-							<a href="#"><i class="fas fa-chevron-down"></i></a>
+							<a href="#" id="btn-2"><i class="fas fa-chevron-down"></i></a>
 						</div>
 					</div>
 				</div>
@@ -92,10 +102,10 @@
 		<div class="seccion4">
 			<div class="hechos">
 				<div class="box">
-					<div class="contenido_hechos"><i class="far fa-calendar-alt"></i><p>Lorem ipsum, dolor sit amet.</p></div>
-					<div class="contenido_hechos"><i class="fas fa-check"></i><p>Lorem ipsum dolor sit, amet.</p></div>
-					<div class="contenido_hechos"><i class="fas fa-brain"></i><p>Lorem ipsum dolor, sit amet.</p></div>
-					<div class="contenido_hechos"><i class="fab fa-envira"></i><p>Lorem, ipsum dolor sit amet.</p></div>
+					<div class="contenido_hechos"><i class="fas fa-plane"></i></i><p>Envio a todo el mundo.</p></div>
+					<div class="contenido_hechos"><i class="fas fa-check"></i><p>Artesano Mexicano </p></div>
+					<div class="contenido_hechos"><i class="fas fa-brain"></i><p>Personalizo Exvotos.</p></div>
+					<div class="contenido_hechos"><i class="fab fa-envira"></i><p>Ciudado al medio ambiente</p></div>
 				</div>
 
 				<div class="boton_section4">
@@ -137,15 +147,14 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
+		</div>	
 
 
 		<footer>
 		
 			<div class="texto_footer">
 				<h2>
-					Laminas y Exvotos <br>
+					Láminas y Exvotos <br>
 					Mexicanos
 				</h2>
 			</div>
@@ -173,6 +182,11 @@
 			</div>
 		</footer>
 
+
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/mainPage.js"></script>
+		<script src="js/efectosMainPage.js"></script>
+		
 	
 </body>
 </html>
