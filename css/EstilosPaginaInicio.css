@@ -28,6 +28,7 @@ a:hover {
 	text-decoration: underline;
 }
 
+
 /*Header*/
 .contenedor {
 	max-width: 1500px;
@@ -200,17 +201,19 @@ header .derecha ul li a .icono {
 	justify-content: center;
 	text-decoration: none;
 	margin-left: 45%;
-	border: 3px solid #000;
+	transition: all .3s ease-in;
+	
 }
 
-
-.boton1:hover {
-	opacity: 0.5;
-}
 
 .boton1 div i {
 	color: #F6C93D;
 	font-size: 40px;
+}
+
+.boton1:hover {
+	background-color: #fff;
+	transform: translateY(20px);  	
 }
 
 
@@ -294,11 +297,20 @@ header .derecha ul li a .icono {
 
 .persona .sobremi a {
 	text-decoration: none;
+
 }
 
 .persona .sobremi a i {
 	color: #fff;
 	font-size: 50px;
+	position: relative;
+	transition: all .3s ease-in;
+	
+}
+
+.persona .sobremi a i:hover {
+	color: #000;
+	transform: translateY(10px);
 }
 
 
@@ -552,8 +564,14 @@ box-shadow: 9px 9px 17px -3px rgba(0,0,0,0.75);
 .seccion4 .contacto .redes_sociales a  {
 	color:#fff;
 	text-decoration: none;
+	transition: all .3s ease;
 
 }
+
+
+.seccion4 .contacto .redes_sociales a:hover {
+	color: #000;
+} 
 
 .seccion4 .contacto .redes_sociales a p {
 	color:#000;
@@ -562,6 +580,8 @@ box-shadow: 9px 9px 17px -3px rgba(0,0,0,0.75);
 	margin-top: 10px;
 
 }
+
+
 
 /*footer section*/
 
@@ -603,6 +623,13 @@ footer .footer_2 a .face {
 	list-style: none;
 	border: 3px solid #000;
 	margin-right: 100px;
+	transition: all .3s ease;
+}
+
+footer .footer_2 a .face:hover {
+	background: #fff;
+	color: #3A393E;
+	border: 0;
 }
 
 footer .footer_2 a .insta {
@@ -618,8 +645,16 @@ footer .footer_2 a .insta {
 	list-style: none;
 	border: 3px solid #000;
 	margin-left: : 100px;
+	transition: all .3s ease;
 }
 
+
+footer .footer_2 a .insta:hover {
+	background: #fff;
+	color: #3A393E;
+	border: 0;
+
+}
 
 footer .footer_2 a {
 	text-decoration: none;

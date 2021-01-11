@@ -19,7 +19,7 @@ $(document).ready(function(){
 			});
 
 			$('.seccion1 .boton1').css({
-				'transform' : 'translate(0px, '+ scroll / 2+'%)'
+				'transform' : 'translate(0px, '+ scroll / 10+'%)'
 			});			
 
 		}

@@ -11,11 +11,11 @@
 </head>
 <body>
 
-		
+
 	<header>
 		<div class="contenedor">
 			<div class="logo izquierda">
-				<a href="#"><img src="img/Em.jpg" alt="" class="imagen_logo"></a>
+				<a href="#"><img src="http://localhost/ExvotosMexicanos/img/Em.jpg" alt="" class="imagen_logo"></a>
 				<div class="nombre_header">Láminas y Exvotos Mexicanos</div></a>
 			</div>
 			<div class="derecha">
@@ -24,7 +24,7 @@
 					<li><a href="#" id="btn-sobremi"><i class="icono far fa-user"></i>Sobre mi</a></li>
 					<li><a href="#" id="btn-ubiacacion"><i class="icono fas fa-map-marker-alt"></i>Ubicación</a></li>
 					<li><a href="#" id="btn-contacto"><i class="icono fas fa-inbox"></i>Contacto</a></li>
-					<li><a href="#" id="btn-catalogo"><i class="icono fas fa-palette"></i>Catálogo</a></li>
+					<li><a href="http://localhost/ExvotosMexicanos/views/catalogo.view.php" id="btn-catalogo"><i class="icono fas fa-palette"></i>Catálogo</a></li>
 				</ul>
 			</div>
 		</div>
@@ -32,7 +32,8 @@
 
 
 
-		<div class="seccion1" id="Primera-seccion">
+
+			<div class="seccion1" id="Primera-seccion">
 
 			<div class="hoja1">
 			<div class="intro" >
@@ -53,7 +54,7 @@
 				<div class="caja2"></div>
 			</div>
 		</div>
-		<a href="#" class="boton1" id="btn-1">
+		<a href="" class="boton1" id="btn-1">
 			<div><i class="fas fa-chevron-down"></i></div>
 		</a>
 		</div>
@@ -74,7 +75,7 @@
 								 de otros, así que naturalmente, se sintió atraída por la fotografía.
 							</p>
 
-							<a href="#" id="btn-2"><i class="fas fa-chevron-down"></i></a>
+							<a href="" id="btn-2"><i class="fas fa-chevron-down"></i></a>
 						</div>
 					</div>
 				</div>
@@ -126,24 +127,24 @@
 
 					<div class="contenedor_contacto">
 						<div class="logo_red_face">
-							<a href="https://www.facebook.com/exvotosylaminasMexicanas"><i class="fab fa-facebook-square"></i></a>
+							<a href="https://www.facebook.com/exvotosylaminasMexicanas" target="_blank"><i class="fab fa-facebook-square"></i></a>
 						</div>
 
-						<a href="https://www.facebook.com/exvotosylaminasMexicanas"><p> Láminas y Éxvotos Mexicanos</p></a>
+						<a href="https://www.facebook.com/exvotosylaminasMexicanas" target="_blank"><p> Láminas y Éxvotos Mexicanos</p></a>
 					</div>
 					<div class="contenedor_contacto">
 						<div class="logo_red_whats">
-							<a href=""><i class="fab fa-whatsapp"></i></a>
+							<a href="https://wa.link/7qufx7" target="_blank"><i class="fab fa-whatsapp"></i></a>
 						</div>
 
-						<a href="#"><p>55 7349 5550</p></a>
+						<a href="https://wa.link/7qufx7" target="_blank"><p>+52 1 56 2197 5398</p></a>
 					</div>
 					<div class="contenedor_contacto">
 						<div class="logo_red_insta">
-							<a href="https://www.instagram.com/exvotos_mexicanos/"><i class="fab fa-instagram"></i></a>
+							<a href="https://www.instagram.com/exvotos_mexicanos/" target="_blank"><i class="fab fa-instagram"></i></a>
 						</div>
 
-						<a href="https://www.instagram.com/exvotos_mexicanos/"><p>@exvotos_mexicanos</p></a>
+						<a href="https://www.instagram.com/exvotos_mexicanos/" target="_blank"><p>@exvotos_mexicanos</p></a>
 					</div>
 				</div>
 			</div>
@@ -161,13 +162,13 @@
 			
 
 			<div class="footer_2">
-				<a href="https://www.facebook.com/exvotosylaminasMexicanas">
+				<a href="https://www.facebook.com/exvotosylaminasMexicanas" target="_blank">
 					<div class="face">
 						<i class="fab fa-facebook-f"></i>
 					</div>
 				</a>
 
-				<a href="https://www.instagram.com/exvotos_mexicanos/">
+				<a href="https://www.instagram.com/exvotos_mexicanos/" target="_blank">
 					<div class="insta">
 						<i class="fab fa-instagram"></i>
 					</div>
@@ -182,7 +183,9 @@
 			</div>
 		</footer>
 
+		
 
+		
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/mainPage.js"></script>
 		<script src="js/efectosMainPage.js"></script>

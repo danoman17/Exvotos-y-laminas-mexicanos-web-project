@@ -78,7 +78,7 @@ if( $(window).width() > 800 ){
 
 	$('.seccion1 .boton1').animate({
 		opacity: 1
-	},2000);
+	},1500);
 
 }
 
