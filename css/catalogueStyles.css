@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Header*/
+.heder {
+	max-width: 1500px;
+	width: 90%;
+	margin: auto;
+	height: 100px;
+}
+
+.izquierda {
+	float: left;
+}
+
+.derecha {
+	float: right;
+}
+.imagen_logo {
+	width: 100px;
+	height: 90px;
+	float: left;
+	padding: 8px;
+	margin-top: 5px;
+	position: relative;
+}
+
+header {
+	color:#000;
+	background: #EFC241;
+}
+
+header .heder {
+	overflow: hidden;
+}
+
+header .logo_h {
+	max-width: 600px;
+}
+
+header .logo_h .nombre_header {
+	color: #000;
+	font-family: "Oswald", Arial, Sans-serif;
+	font-size: 28px;
+	margin: 15px 0 0 150px;
+	width: 250px;
+}
+
+header .derecha ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header .derecha ul li {
+	line-height: 100px;
+}
+
+header .derecha ul li a {
+	color: #000;
+	display: block;
+	padding: 0px 20px;
+	font-size: 18px;
+	transition: all .1s ease;
+	position: relative;
+}
+
+header .derecha ul li a:hover {
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+}
+
+header .derecha ul li a .icono {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+
+
+
+/*footer section*/
+
+footer .texto_footer {
+	height: 200px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-bottom: 4px solid #323136;
+	color: #fff;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	background: #3A393E;
+
+}
+
+footer .footer_2 {
+	height: 150px;
+	width: 100%;
+	background: #3A393E;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+footer .footer_2 a .face {
+	width: 100px;
+	height: 100px;
+	background: #3A393E;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 60px;
+	color: #fff;
+	list-style: none;
+	border: 3px solid #000;
+	margin-right: 100px;
+	transition: all .3s ease;
+}
+
+footer .footer_2 a .face:hover {
+	background: #fff;
+	color: #3A393E;
+	border: 0;
+}
+
+footer .footer_2 a .insta {
+	width: 100px;
+	height: 100px;
+	background: #3A393E;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 60px;
+	color: #fff;
+	list-style: none;
+	border: 3px solid #000;
+	margin-left: : 100px;
+	transition: all .3s ease;
+}
+
+
+footer .footer_2 a .insta:hover {
+	background: #fff;
+	color: #3A393E;
+	border: 0;
+
+}
+
+footer .footer_2 a {
+	text-decoration: none;
+}
+
+
+footer .pie_pagina {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background: #3A393E;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	width: 100%;
+	height: 50px;
+}
+
+
+
+
+
+/* Art Galery section*/
+
+.contenedor {
+	width: 90%;
+	max-width: 800px;
+	margin: auto;
+}
+
+
+.logo {
+	padding: 40px 0;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+
+.logo p {
+	color: #9b9b9b;
+}
+
+.contenedor form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.contenedor form .barra-busqueda {
+	width: 70%;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	padding: 0 20px;
+	border-radius: 100px;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+
+}
+
+
+.contenedor .categorias {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.contenedor .categorias a {
+	color: #9b9b9b;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.contenedor .categorias a.activo {
+	color: #000;
+}
+
+
+/*Grid  -----*/
+
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+
+}
+
+.grid.imagenes-cargadas {
+	opacity: 1
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.333333% - 20px);
+}
+
+
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+}
