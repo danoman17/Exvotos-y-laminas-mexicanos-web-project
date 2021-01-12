@@ -148,6 +148,15 @@
 	</section>
 
 
+	<section class="overlay" id="overlay">
+		<div class="contenedor-img">
+			<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+			<img src="" alt="">
+		</div>
+		<p class="descripcion"></p>
+	</section>
+
+
 	</div>
 
 
