@@ -194,7 +194,7 @@ footer .pie_pagina {
 
 .contenedor {
 	width: 90%;
-	max-width: 800px;
+	max-width: 1200px;
 	margin: auto;
 }
 
@@ -202,12 +202,18 @@ footer .pie_pagina {
 .logo {
 	padding: 40px 0;
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 
 .logo p {
-	color: #9b9b9b;
+	font-size: 20px;
+	color: #000;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.logo h1 {
+	font-size: 50px;
 }
 
 .contenedor form {
@@ -255,8 +261,9 @@ footer .pie_pagina {
 	position: relative;
 	width: 100%;
 	opacity: 0;
+	margin-bottom: 150px;
 	transition: opacity 0.5s linear 1s;
-
+	min-height: 90%;
 }
 
 .grid.imagenes-cargadas {
@@ -267,8 +274,9 @@ footer .pie_pagina {
 	position: absolute;
 	display: block;
 	padding: 0;
-	margin: 10px;
-	width: calc(33.333333% - 20px);
+	margin: 20px;
+	width: calc(33.333333% - 40px);
+
 }
 
 
@@ -280,6 +288,24 @@ footer .pie_pagina {
 	width: 100%;
 	cursor: pointer;
 	vertical-align: top;
+	border-radius: 10px;
+}
+
+.grid .nombre-img {
+	height: auto;
+	min-height: 60px;
+	text-align: center;
+	width: 95%;
+	background: #F5BA21;
+	padding: 5px;
+	margin: 5px auto;
+	border-radius: 10px;
+}
+
+.grid .nombre-img p {
+	font-size: 15px;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*overlay*/
@@ -314,12 +340,13 @@ footer .pie_pagina {
 	text-align: center;
 	margin-top: 5px;
 	border-radius: 10px;
-	max-width: 50%;
+	max-width: 30%;
 }
 
 
 .contenedor-img {
 position: relative;
+
 }
 
 .overlay #btn-cerrar-popup {
@@ -330,5 +357,5 @@ position: relative;
 	cursor: pointer;
 	position: absolute;
 	right: -20px;
-	top: -20px;
+	top: -2px;
 }

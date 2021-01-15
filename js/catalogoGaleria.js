@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
 		grid.filter((item) => item.getElement().dataset.etiquetas.includes(busqueda));
 	});
 
-	//Agreganis listener para las imagenes
+	//Agregamos listener para las imagenes
 	const overlay = document.getElementById('overlay');
 	document.querySelectorAll('.grid .item img').forEach( (elemento) => {
 		

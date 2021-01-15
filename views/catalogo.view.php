@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/fdd2e8457c.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="../css/catalogueStyles.css">
+	<link rel="stylesheet" type="text/css" href="css/catalogueStyles.css">
 	<title>Catalogo</title>
 </head>
 <body>
@@ -34,7 +34,7 @@
 	<div class="contenedor">
 		<div class="logo">
 			<h1>Catálogo</h1>
-			<p>Laminas y Exvotos Mexicanos</p>
+			<p>Láminas y Exvotos Mexicanos</p>
 		</div>
 
 		<form action="">
@@ -51,99 +51,23 @@
 
 	<section class="grid" id="grid">
 
+		<?php foreach($prod_stmt as $key): ?>
 
 		<div class="item" 
-			data-categoria="exvotos" 
-			data-etiquetas="ciudades autos carros calles"
-			data-descripcion="1.- askldjalskjdalñskjd aslkdjalskjd"
+			data-categoria="<?php echo $key['category']; ?>" 
+			data-etiquetas="ciudades autos carros "
+			data-descripcion="<?php echo $key['workDescription']; ?>"
 		>
 			<div class="item-contenido">
-				<img src="../img/ciudad1.png" alt="">
+				<img src="img/<?php echo $key['imgPath']; ?>" alt="">
+			</div>
+
+			<div class="nombre-img">
+				<p><?php echo $key['workName']; ?></p>
 			</div>
 		</div>
 
-
-		<div class="item" 
-			data-categoria="otros" 
-			data-etiquetas="personas mujeres"
-			data-descripcion="2.- askldjalskjdalñskjd aslkdjalskjd"
-		>
-			<div class="item-contenido">
-				<img src="../img/persona3.png" alt="">
-			</div>
-		</div>
-
-		<div class="item" 
-			data-categoria="exvotos" 
-			data-etiquetas="personas mujeres"
-			data-descripcion="3.- askldjalskjdalñskjd aslkdjalskjd"
-		>
-			<div class="item-contenido">
-				<img src="../img/persona2.png" alt="">
-			</div>
-		</div>
-
-		<div class="item" 
-			data-categoria="otros" 
-			data-etiquetas="paisajes arboles bosques"
-			data-descripcion="4.- askldjalskjdalñskjd aslkdjalskjd"
-		>
-			<div class="item-contenido">
-				<img src="../img/paisaje2.png" alt="">
-			</div>
-		</div>
-
-		<div class="item" 
-			data-categoria="exvotos" 
-			data-etiquetas="paisajes playas mar"
-			data-descripcion="5.- askldjalskjdalñskjd aslkdjalskjd"
-		>
-			<div class="item-contenido">
-				<img src="../img/paisaje1.png" alt="">
-			</div>
-		</div>
-
-		<div class="item" 
-			data-categoria="otros" 
-			data-etiquetas="plantas verde naturaleza"
-			data-descripcion="6.- askldjalskjdalñskjd aslkdjalskjd"
-		>
-			<div class="item-contenido">
-				<img src="../img/naturaleza1.png" alt="">
-			</div>
-		</div>
-
-		<div class="item" 
-			data-categoria="exvotos" 
-			data-etiquetas="mar nubes edificios"
-			data-descripcion="7.- askldjalskjdalñskjd aslkdjalskjd"
-		>
-			<div class="item-contenido">
-				<img src="../img/ciudad2.png" alt="">
-			</div>
-		</div>
-
-		<div class="item" 
-			data-categoria="otros" 
-			data-etiquetas="pandas blanco negro"
-			data-descripcion="8.- askldjalskjdalñskjd aslkdjalskjd"
-		>
-			<div class="item-contenido">
-				<img src="../img/animal2.png" alt="">
-			</div>
-		</div>
-
-		<div class="item" 
-			data-categoria="exvotos" 
-			data-etiquetas="leones pelos felinos"
-			data-descripcion="9.- askldjalskjdalñskjd aslkdjalskjd"
-		>
-			<div class="item-contenido">
-				<img src="../img/animal1.png" alt="">
-			</div>
-		</div>
-
-
+	   <?php endforeach;?>
 		
 	</section>
 
@@ -162,9 +86,46 @@
 
 
 
+
+		<footer>
+		
+			<div class="texto_footer">
+				<h2>
+					Láminas y Exvotos <br>
+					Mexicanos
+				</h2>
+			</div>
+			
+
+			<div class="footer_2">
+				<a href="https://www.facebook.com/exvotosylaminasMexicanas" target="_blank">
+					<div class="face">
+						<i class="fab fa-facebook-f"></i>
+					</div>
+				</a>
+
+				<a href="https://www.instagram.com/exvotos_mexicanos/" target="_blank">
+					<div class="insta">
+						<i class="fab fa-instagram"></i>
+					</div>
+				</a>
+			</div>
+
+
+			<div class="pie_pagina">
+				<p>
+					Copyright © 2021 Daniel Flores R. All rights reserved.
+				</p>
+			</div>
+		</footer>
+
+
+
+
+
 	<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
-	<script src="../js/catalogoGaleria.js"></script>
+	<script src="js/catalogoGaleria.js"></script>
 	
 	
 
