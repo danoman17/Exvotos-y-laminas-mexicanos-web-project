@@ -286,6 +286,7 @@ footer .pie_pagina {
 
 .grid .item img {
 	width: 100%;
+	min-height: 280px;
 	cursor: pointer;
 	vertical-align: top;
 	border-radius: 10px;

@@ -51,21 +51,23 @@
 
 	<section class="grid" id="grid">
 
-		<?php foreach($prod_stmt as $key): ?>
+		<?php foreach($prod_stmt as $producto_real): ?>
 
-		<div class="item" 
-			data-categoria="<?php echo $key['category']; ?>" 
-			data-etiquetas="ciudades autos carros "
-			data-descripcion="<?php echo $key['workDescription']; ?>"
-		>
-			<div class="item-contenido">
-				<img src="img/<?php echo $key['imgPath']; ?>" alt="">
-			</div>
+			<?php $stickers_cad = etiquetas($producto_real['0'], $conexion); ?> 
 
-			<div class="nombre-img">
-				<p><?php echo $key['workName']; ?></p>
+			<div class="item" 
+				data-categoria="<?php echo $producto_real['category']; ?>" 
+				data-etiquetas="<?php echo $stickers_cad; ?>"
+				data-descripcion="<?php echo $producto_real['workDescription']; ?>"
+			>
+				<div class="item-contenido">
+					<img src="img/<?php echo $producto_real['imgPath']; ?>" alt="">
+				</div>
+
+				<div class="nombre-img">
+					<p><?php echo $producto_real['workName']; ?></p>
+				</div>
 			</div>
-		</div>
 
 	   <?php endforeach;?>
 		
