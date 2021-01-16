@@ -2,7 +2,7 @@
     
     require 'funciones.php';
 
-    $conexion = conexion('exvotos_laminas_mx', 'root', 'java0900');
+    $conexion = conexion('exvotos_laminas_mx', 'root', '');
 
     if(!$conexion) {
 
