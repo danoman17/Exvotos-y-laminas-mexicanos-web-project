@@ -15,7 +15,7 @@
 	<header>
 		<div class="contenedor">
 			<div class="logo izquierda">
-				<a href="#"><img src="http://localhost/ExvotosMexicanos/img/Em.jpg" alt="" class="imagen_logo"></a>
+				<a href="index.php"><img src="http://localhost/ExvotosMexicanos/img/Em.jpg" alt="" class="imagen_logo"></a>
 				<div class="nombre_header">Láminas y Exvotos Mexicanos</div></a>
 			</div>
 			<div class="derecha">
@@ -24,7 +24,7 @@
 					<li><a href="#" id="btn-sobremi"><i class="icono far fa-user"></i>Sobre mi</a></li>
 					<li><a href="#" id="btn-ubiacacion"><i class="icono fas fa-map-marker-alt"></i>Ubicación</a></li>
 					<li><a href="#" id="btn-contacto"><i class="icono fas fa-inbox"></i>Contacto</a></li>
-					<li><a href="http://localhost/ExvotosMexicanos/views/catalogo.view.php" id="btn-catalogo"><i class="icono fas fa-palette"></i>Catálogo</a></li>
+					<li><a href="catalogo.php" id="btn-catalogo"><i class="icono fas fa-palette"></i>Catálogo</a></li>
 				</ul>
 			</div>
 		</div>
@@ -93,7 +93,9 @@
 
 				<div class="mapa">
 					
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6654076605945!2d-99.16814652076758!3d19.427020599180462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1609990884167!5m2!1ses-419!2smx" width="750" height="500" frameborder="0" style="border:3px solid ;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6654076605945!2d-99.16814652076758!3d19.427020599180462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!
+						1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1609990884167!5m2!1ses-419!2smx" 
+						width="750" height="500" frameborder="0" style="border:3px solid ;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 				</div>
 			</div>
@@ -103,10 +105,10 @@
 		<div class="seccion4">
 			<div class="hechos">
 				<div class="box">
-					<div class="contenido_hechos"><i class="fas fa-plane"></i></i><p>Envio a todo el mundo.</p></div>
+					<div class="contenido_hechos"><i class="fas fa-plane"></i></i><p>Envios a todo el mundo.</p></div>
 					<div class="contenido_hechos"><i class="fas fa-check"></i><p>Artesano Mexicano </p></div>
-					<div class="contenido_hechos"><i class="fas fa-brain"></i><p>Personalizo Exvotos.</p></div>
-					<div class="contenido_hechos"><i class="fab fa-envira"></i><p>Ciudado al medio ambiente</p></div>
+					<div class="contenido_hechos"><i class="fas fa-brain"></i><p>Personalizacion de Exvotos.</p></div>
+					<div class="contenido_hechos"><i class="fab fa-envira"></i><p>Ciudado del medio ambiente</p></div>
 				</div>
 
 				<div class="boton_section4">

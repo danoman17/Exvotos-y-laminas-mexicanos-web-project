@@ -20,10 +20,7 @@
 			<div class="derecha">
 				<ul>
 					<li><a href="#" id="btn-home"><i class="icono fas fa-home"></i>Inicio</a></li>
-					<li><a href="#" id="btn-sobremi"><i class="icono far fa-user"></i>Sobre mi</a></li>
-					<li><a href="#" id="btn-ubiacacion"><i class="icono fas fa-map-marker-alt"></i>Ubicación</a></li>
-					<li><a href="#" id="btn-contacto"><i class="icono fas fa-inbox"></i>Contacto</a></li>
-					<li><a href="http://localhost/ExvotosMexicanos/views/catalogo.view.php" id="btn-catalogo"><i class="icono fas fa-palette"></i>Catálogo</a></li>
+					
 				</ul>
 			</div>
 		</div>
@@ -38,7 +35,7 @@
 		</div>
 
 		<form action="">
-			<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="buscar">
+			<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar color, elementos, nombre...">
 		</form>
 
 		<div class="categorias" id="categorias">
@@ -59,6 +56,9 @@
 				data-categoria="<?php echo $producto_real['category']; ?>" 
 				data-etiquetas="<?php echo $stickers_cad; ?>"
 				data-descripcion="<?php echo $producto_real['workDescription']; ?>"
+				data-nombre="<?php echo $producto_real['workName']; ?>"
+				data-precio="<?php echo $producto_real['workPrice']; ?>"
+
 			>
 				<div class="item-contenido">
 					<img src="img/<?php echo $producto_real['imgPath']; ?>" alt="">
@@ -79,7 +79,17 @@
 			<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
 			<img src="" alt="">
 		</div>
-		<p class="descripcion"></p>
+
+		<div class="contenedor">
+
+			<p class="subtitulos">Nombre: </p>
+			<p class="nombre"></p>
+			<p class="subtitulos">Descripción: </p>
+			<p class="descripcion"></p>
+			<p class="subtitulos">Precio: </p>
+			<p class="precio"></p>
+
+		</div>
 	</section>
 
 

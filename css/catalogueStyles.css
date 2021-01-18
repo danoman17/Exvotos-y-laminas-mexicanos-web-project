@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
 * {
 	margin: 0;
@@ -304,9 +305,9 @@ footer .pie_pagina {
 }
 
 .grid .nombre-img p {
-	font-size: 15px;
-	font-weight: 700;
-	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	
+	font-family: 'Yusei Magic', sans-serif;
 }
 
 /*overlay*/
@@ -323,6 +324,7 @@ footer .pie_pagina {
 	display: none;
 	align-items: center;
 	justify-content: center;
+	align-content: center;
 	flex-direction: column;
 }
 
@@ -334,19 +336,39 @@ footer .pie_pagina {
 	max-width: 100%;
 }
 
-.overlay .descripcion {
+.overlay .contenedor {
+	position: relative;
 	display: block;
 	background: #fff;
 	padding: 20px;
-	text-align: center;
-	margin-top: 5px;
 	border-radius: 10px;
 	max-width: 30%;
+	font-family: 'Yusei Magic', sans-serif;
 }
+
+.overlay  .contenedor .subtitulos {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.overlay .descripcion {
+	margin-bottom: 10px;
+}
+
+.overlay .nombre {
+	margin-bottom: 10px;
+}
+
+
+.overlay .precio {
+	margin-bottom: 10px;
+}
+
 
 
 .contenedor-img {
 position: relative;
+top: 100px;
 
 }
 
