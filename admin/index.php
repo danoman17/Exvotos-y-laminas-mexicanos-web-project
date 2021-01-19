@@ -6,7 +6,7 @@ if(isset($_SESSION['usuario'])) {
 	die();
 } else {
 	// Enviamos al usuario al formulario de registro
-	header('Location: ../admin/login.php');
+	header('Location: login.php');
 }
 
 ?>
