@@ -14,12 +14,12 @@
 	<header>
 		<div class="heder">
 			<div class="logo_h izquierda">
-				<a href="#"><img src="http://localhost/ExvotosMexicanos/img/Em.jpg" alt="" class="imagen_logo"></a>
+				<a href="index.php"><img src="http://localhost/ExvotosMexicanos/img/Em.jpg" alt="" class="imagen_logo"></a>
 				<div class="nombre_header">Láminas y Exvotos Mexicanos</div></a>
 			</div>
 			<div class="derecha">
 				<ul>
-					<li><a href="#" id="btn-home"><i class="icono fas fa-home"></i>Inicio</a></li>
+					<li><a href="index.php" id="btn-home"><i class="icono fas fa-home"></i>Inicio</a></li>
 					
 				</ul>
 			</div>

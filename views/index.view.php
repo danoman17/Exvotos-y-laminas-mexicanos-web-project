@@ -113,7 +113,7 @@
 
 				<div class="boton_section4">
 					<div class="boton_explorar">
-						<a href="#">Explorar</a>
+						<a href="catalogo.php">Explorar</a>
 					</div>
 				</div>
 
