@@ -4,13 +4,13 @@ require '../funciones.php';
 
 $conexion = conexion('exvotos_laminas_mx', 'root', 'java0900');
 
-// if(!$conexion) {
+if(!$conexion) {
 
-//     //redirigir la pagina de error
-//     //Por el momento estamos 
+    //redirigir la pagina de error
+    //Por el momento estamos 
 
-//     die();
-// }
+    die();
+}
 
 
 if (isset($_SESSION['usuario'])) {
@@ -25,7 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);
     $password = $_POST['password'];
     $password = hash('sha512',$password);
-    echo $password;
 
     
 
@@ -40,15 +39,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $resultado = $statement->fetch();
 
-    print_r($resultado);
-
 
    if ($resultado !== false) {
        $_SESSION['usuario'] = $usuario;
        header('Location: index.php');
    } else {
-       $errores .= '<li> Datos Incorrectos </li>';
-   }
+       $errores .= '<li> ¡ Datos Incorrectos ! </li>';
+   } 
 }
 require '../views/login.view.php';
 

@@ -31,11 +31,9 @@
 				<?php endif;?>
 			</form>
 			
-			<a href="">
-				<p class="olvidoPass">
-					Olvide mi constraseña
-				</p>
-			</a>
+			
+				<a href="#">Olvide mi contraseña</a>
+			
 
 		</div>
 

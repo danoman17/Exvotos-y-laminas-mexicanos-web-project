@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -34,10 +35,10 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    height: 65%;
+    height: auto;
+    min-height: 75%;
+    min-width: 400px;
     width: 30%;
-    
-    
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     line-height: 1;
@@ -65,19 +66,20 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    height: 40%;
+    height: 300px;
     width: 100%;
+    /*background: #fff;*/
     
 }
 
-.contenedor a .olvidoPass {
+.contenedorGeneral .contenedor a {
     text-decoration: none;
-    
+    list-style: none;
     color: #fff;
 }
 
 .contenedor .formulario input[type=text], input[type=password] {
-    width: 70%;
+    width: 80%;
     padding: 12px 1px;
     margin: 0;
     border: 0;
@@ -105,6 +107,31 @@ body {
     margin-top: 20px;
 
 }
+
+
+.contenedor .formulario .error {
+    
+    background: #810c0c;
+    color: #fff;
+    height: auto;
+    min-height: 50px;
+    width: 60%;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor .formulario .error ul li { 
+    list-style: none;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}
+
 
 
 

@@ -7,10 +7,11 @@ require '../funciones.php';
 $conexion = conexion('exvotos_laminas_mx', 'root', 'java0900');
 
 
-
 if (isset($_SESSION['usuario'])) {
-    header('Location: inicioAdmin.php');
-    die();
+	require '../views/inicioAdmin.view.php';
+} else {
+	header('Location: login.php');
+	die();
 }
 
 
