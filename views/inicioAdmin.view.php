@@ -16,12 +16,12 @@
             
                 <div class="indices">
                     <ul>
-                        <li><a href="#" id="btn-home"><i class="icono fas fa-home"></i>Inicio</a></li>
-                        <li><a href="#" id="btn-sobremi"><i class="fas fa-user"></i>Configuración</a></li>
-                        <li><a href="#" id="btn-ubiacacion"><i class="fas fa-plus-square"></i>Nuevo</a></li>
-                        <li><a href="#" id="btn-contacto"><i class="fas fa-edit"></i>Modificar</a></li>
-                        <li><a href="catalogo.php" id="btn-catalogo"><i class="fas fa-eraser"></i>Eliminar</a></li>
-                        <li><a href="catalogo.php" id="btn-catalogo"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a></li>
+                        <li class="encabezado">Menu</li>
+                        <li><a href="#" id="btn-sobremi"><i class="fas fa-user"></i>Configuración<i class="fas fa-caret-right flecha_derecha"></i></a></li>
+                        <li><a href="#" id="btn-ubiacacion"><i class="fas fa-plus-square"></i>Nuevo<i class="fas fa-caret-right flecha_derecha"></i></a></li>
+                        <li><a href="#" id="btn-contacto"><i class="fas fa-edit"></i>Modificar<i class="fas fa-caret-right flecha_derecha"></i></a></li>
+                        <li><a href="#" id="btn-catalogo"><i class="fas fa-eraser"></i>Eliminar<i class="fas fa-caret-right flecha_derecha"></i></a></li>
+                        <li><a href="../admin/cerrar.php" id="btn-catalogo"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión<i class="fas fa-caret-right flecha_derecha"></i></a></li>
                     </ul>
                 </div>
 
@@ -29,7 +29,9 @@
 
 
         <div class="contenido">
-
+            <h2>
+                Bienvenido, <?php echo "$nameUser $surnameUser"; ?>
+            </h2>
 
         </div>
 

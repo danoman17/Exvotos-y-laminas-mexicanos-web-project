@@ -8,16 +8,23 @@ $conexion = conexion('exvotos_laminas_mx', 'root', 'java0900');
 
 
 if (isset($_SESSION['usuario'])) {
+
+	$statement = $conexion->prepare('SELECT userName, userSurname FROM admin WHERE userName = :name ');
+
+	$statement->execute(array(
+		':name' => $_SESSION['usuario']
+	));
+
+	$resultado = $statement->fetch();
+
+	$nameUser = ucfirst($resultado['userName']);
+	$surnameUser = ucfirst($resultado['userSurname']);
+
 	require '../views/inicioAdmin.view.php';
 } else {
 	header('Location: login.php');
 	die();
 }
-
-
-
-
-
 
 
 
