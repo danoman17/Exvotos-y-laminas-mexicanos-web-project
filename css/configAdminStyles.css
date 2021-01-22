@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.contenedorGeneral {
+    display: flex;
+}
+
+/* Lateral navbar-------------------------------*/
+.contenedorGeneral header{
+    height: 100vh;
+    width: 12%;
+ 
+}
+
+.contenedorGeneral header .indices {
+    height: 100%;
+    width: 100%;
+  
+}
+
+.contenedorGeneral header .indices .encabezado {
+    display: flex;
+    justify-content: center;
+    background: #EFC241;
+    align-items: center;
+    font-family: "Oswald", Arial, Sans-serif;
+    font-size: 30px;
+    height: 10%;
+}
+
+.contenedorGeneral header .indices ul{    
+    height: 100%;
+    width: 100%;
+}
+
+
+.contenedorGeneral header .indices ul li{ 
+    height: 18%;
+    width: 100%;
+}
+
+.contenedorGeneral header .indices ul li a {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    background: #1b2845;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedorGeneral header .indices ul .flecha_derecha {
+    position: absolute;
+    left: 10%;
+}
+
+.contenedorGeneral header .indices ul li a:hover { 
+    background: #5d7dc0;
+
+}
+
+
+.contenedorGeneral header .indices ul li a i {
+    margin-right: 10%;
+    font-size: 25px;
+}
+
+
+/*formulario*/
+
+.contenedorGeneral .contenido {
+    height: 100vh;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.contenedorGeneral .contenido .tarj {
+    width: 60%;
+    height: auto;
+    background: #e9e3d8;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-box-shadow: 7px 2px 23px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 2px 23px 10px rgba(0,0,0,0.75);
+    box-shadow: 7px 2px 23px 10px rgba(0,0,0,0.75);
+}
+
+
+.contenedorGeneral .contenido .tarj h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    position: relative;
+    bottom: 5%;
+}
+
+.contenedorGeneral .contenido .tarj .formulario {
+    width: 75%;
+    height: auto;
+}
+
+
+.contenedorGeneral .contenido .tarj .formulario p {
+    position: relative;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-items:center;
+    font-weight: bold;
+    left: 8px;
+    
+}
+
+.contenedorGeneral .contenido .tarj .formulario .elemento {
+    width: auto;
+    height: auto;
+    margin: 0 0 20px 0;
+    
+}
+
+.contenedorGeneral .contenido .tarj .formulario .elemento input[type="text"] , input[type="email"] , input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+  font-size: 18px;
+}
+
+
+.contenedorGeneral .contenido .tarj .formulario  input[type="submit"] { 
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: #64CB59;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.contenedorGeneral .contenido .tarj .errores {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 20px;
+}

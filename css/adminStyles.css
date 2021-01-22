@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -92,4 +95,21 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 100px;
 }
+
+
+.contenedorGeneral .contenido h2 {
+    
+    position: relative;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 50px;
+    
+}
+
+.contenedorGeneral .contenido h2:hover {
+    cursor: context-menu;
+}
+

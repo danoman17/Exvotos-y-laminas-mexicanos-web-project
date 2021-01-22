@@ -17,7 +17,7 @@
                 <div class="indices">
                     <ul>
                         <li class="encabezado">Menu</li>
-                        <li><a href="#" id="btn-sobremi"><i class="fas fa-user"></i>Configuración<i class="fas fa-caret-right flecha_derecha"></i></a></li>
+                        <li><a href="../admin/configAdmin.php" id="btn-sobremi"><i class="fas fa-user"></i>Configuración<i class="fas fa-caret-right flecha_derecha"></i></a></li>
                         <li><a href="#" id="btn-ubiacacion"><i class="fas fa-plus-square"></i>Nuevo<i class="fas fa-caret-right flecha_derecha"></i></a></li>
                         <li><a href="#" id="btn-contacto"><i class="fas fa-edit"></i>Modificar<i class="fas fa-caret-right flecha_derecha"></i></a></li>
                         <li><a href="#" id="btn-catalogo"><i class="fas fa-eraser"></i>Eliminar<i class="fas fa-caret-right flecha_derecha"></i></a></li>
@@ -30,12 +30,17 @@
 
         <div class="contenido">
             <h2>
-                Bienvenido, <?php echo "$nameUser $surnameUser"; ?>
+                ¡ Bienvenido, <br>    
+                        <?php echo  "$nameUser $surnameUser  !"; ?>
             </h2>
 
         </div>
 
     </div>
 
+
+    	
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<script src="../js/efectosMainAdmin.js"></script>
 </body>
 </html>
