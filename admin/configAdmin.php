@@ -9,10 +9,10 @@ if (isset($_SESSION['usuario'])) {
 
     $error = "";
 
-	$statement = $conexion->prepare('SELECT * FROM admin WHERE userName = :name ');
+	$statement = $conexion->prepare('SELECT * FROM admin WHERE idUser = :id ');
 
 	$statement->execute(array(
-		':name' => $_SESSION['usuario']
+		':id' => $_SESSION['usuario']
 	));
 
     $resultado = $statement->fetch();
@@ -27,6 +27,8 @@ if (isset($_SESSION['usuario'])) {
         $password2 = $_POST['pass2'];
         
         
+        $id_sesion = $_SESSION['usuario'];
+
 
         $flag_campos = true;
         if(empty($name) || empty($ApellidoP) || empty($ApellidoM) || empty($email) ){
@@ -42,11 +44,64 @@ if (isset($_SESSION['usuario'])) {
             $error .= "<li>Las contraseñas no coinciden.</li>";
         }
 
-        if($flag_campos && $flag_pass) {
-            //echo "se hace la actualizacion :D";
+        $validar_pass = true;
+
+        if (!empty($password)) {
+            $validar_pass = false;
+        }
+
+        $signal = false;
+        
+        if(($flag_campos && $flag_pass) && ($validar_pass)) {
+            
+            
+            $stmt = $conexion->prepare  ('UPDATE admin
+            SET userName=:nombre, 
+                userSurname=:AP, 
+                userSecondSurname=:AM,
+                email=:correo
+            WHERE idUser=:id');
+
+            $stmt->execute(array(
+                ':nombre'=>$name,
+                ':AP'=>$ApellidoP,
+                ':AM'=>$ApellidoM,
+                ':correo'=>$email,
+                ':id'=> $id_sesion
+            ));
+
+            //echo "se ha hecho la actualización.";
+            $signal = true;
+
+
+        }elseif (($flag_campos && $flag_pass) && !($validar_pass)) {
             $password = hash('sha512',$password);
-            $stmt = $conexion->prepare  ('UPDATE FROM admin VALUES(:)');
-        } 
+            
+
+            $stmt = $conexion->prepare  ('UPDATE admin
+            SET userName=:nombre, 
+                userSurname=:AP, 
+                userSecondSurname=:AM,
+                email=:correo,
+                userPass=:passw
+            WHERE idUser=:id');
+
+            
+            $stmt->execute(array(
+                ':nombre'=>$name,
+                ':AP'=>$ApellidoP,
+                ':AM'=>$ApellidoM,
+                ':correo'=>$email,
+                ':id'=> $id_sesion,
+                'passw'=>$password
+            ));
+
+            //echo "Se hace la actualizacion pero con contraseña";
+            $signal = true;
+        }
+
+
+
 
 
 

@@ -182,3 +182,37 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
     position: relative;
     border-radius: 20px;
 }
+
+
+/*Succesfuly update popup */
+
+.contenedorGeneral .contenido .confirmation {
+    background: #fff;
+    border-radius: 10px;
+    border: 3px solid #000;
+    border-top: 30px solid #000;
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contenedorGeneral .contenido .confirmation.remover {
+    display: none;
+}
+
+
+.contenedorGeneral .contenido .confirmation i {
+    position: absolute;
+    font-weight: 20px;
+    color: #fff;
+    top: -27px;
+    right: 10px;
+    cursor: pointer;
+
+}

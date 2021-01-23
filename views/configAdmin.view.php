@@ -75,12 +75,25 @@
                 </div>
                 <?php endif;?>
             </div>
+        
             
-
+            <?php if($signal == true):?>
+                <div class="confirmation">
+                    <p>Los datos se han actualziado correctamente !</p>
+                    <i class="fas fa-times" id="close"></i>
+                </div>
+            <?php  endif;?>
         </div>
 
     </div>
 
+
+    <script>
+        document.getElementById("close").addEventListener("click", function(){
+            document.querySelector(".contenedorGeneral .contenido .confirmation").style.display = "none";
+        })
+
+    </script>
 
     	
 		

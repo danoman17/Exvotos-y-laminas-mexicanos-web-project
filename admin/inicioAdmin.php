@@ -9,10 +9,10 @@ $conexion = conexion('exvotos_laminas_mx', 'root', 'java0900');
 
 if (isset($_SESSION['usuario'])) {
 
-	$statement = $conexion->prepare('SELECT userName, userSurname FROM admin WHERE userName = :name ');
+	$statement = $conexion->prepare('SELECT userName, userSurname FROM admin WHERE idUser = :id ');
 
 	$statement->execute(array(
-		':name' => $_SESSION['usuario']
+		':id' => $_SESSION['usuario']
 	));
 
 	$resultado = $statement->fetch();
