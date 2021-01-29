@@ -90,7 +90,6 @@ body {
 .contenedorGeneral .contenido {
     width: 88%;
     height: 100vh;
-    background: tomato;
     background-image: url("../img/admin1.jpg");
     background-position: center;
     background-repeat: no-repeat;
