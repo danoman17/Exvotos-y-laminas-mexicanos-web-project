@@ -46,7 +46,7 @@
                                 <select name="ddl_categoria" id="ddl_categoria" class="ddl_categoria" required>
                                     <option value="">Elige una categoria</option>
                                     <?php foreach ($category as $item_cat):?>
-                                    <option value=""><?php echo $item_cat['category']; ?></option>
+                                    <option value="<?php echo $item_cat['idCategory']?>"><?php echo $item_cat['category']; ?></option>
                                     <?php endforeach;?>
                                 </select>
                             </div>
@@ -101,10 +101,10 @@
                         
                 </form>
 
-                <?php if(!empty($error)):?>
+                <?php if(!empty($em)):?>
                 <div class="errores">
                     <ul>
-                        <?php echo $error;?>
+                        <?php echo $em;?>
                     </ul>
 
                 </div>
@@ -114,7 +114,7 @@
             
             <?php if($signal == true):?>
                 <div class="confirmation">
-                    <p>Los datos se han actualziado correctamente !</p>
+                    <p>Registro Finalizado con exito</p>
                     <i class="fas fa-times" id="close"></i>
                 </div>
             <?php  endif;?>

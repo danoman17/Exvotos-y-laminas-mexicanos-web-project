@@ -7,7 +7,11 @@ $conexion = conexion('exvotos_laminas_mx', 'root', 'java0900');
 
 if(isset($_SESSION['usuario'])){
     //Inicializacmos los mensaje de errores.
-    $em = "";
+    $em = '';
+
+    //Inicializamos la variable para el popup
+
+    $signal = false;
 
     //Hacemos consulta para poder traer de la DB las categorias totales
 
@@ -33,7 +37,7 @@ if(isset($_SESSION['usuario'])){
             {
                 if ($imgSize > 5000000) 
                 {
-                    echo "Sorry, your file is too large";
+                    $em .= "<li>La imagen es demasiado grande.</li>";
 
                 } 
                 else 
@@ -47,48 +51,104 @@ if(isset($_SESSION['usuario'])){
                     {
                         $new_img_name = uniqid("IMG-", true).'.'.$img_ex_lc;
                         $img_upload_path = '../img/'.$new_img_name;
+
+
+                           //Traemos los valores del form 
+                        $nombre = limpiarDatos(filter_var($_POST['nombre'], FILTER_SANITIZE_STRING));
+                        $Categoria = limpiarDatos(filter_var(strtolower($_POST['ddl_categoria']), FILTER_SANITIZE_STRING));
+                        $descripcion = limpiarDatos(filter_var($_POST['descripcion'], FILTER_SANITIZE_STRING));
+                        $pesos = limpiarDatos(filter_var(strtolower($_POST['pesos']), FILTER_SANITIZE_STRING));    
+                        $centavos = limpiarDatos(filter_var(strtolower($_POST['cents']), FILTER_SANITIZE_STRING));
+                        $precio = "$pesos.$centavos";
+
+                        //Variable para saber cuantas casillas dinamicas hay
+                        $number = count($_POST["name"]);
+
+
+
+
+
+                            /*impresion de datos*/ 
+
+                            // echo $nombre ."\n";
+                            // echo $Categoria ."\n";
+                            // echo $descripcion ."\n";
+                            // echo $precio ."\n";
+                            // echo $new_img_name . "\n";
+
+                            //insertamos a la db los datos del formulario.
+                            $stmt2 = $conexion->prepare('INSERT INTO product (idCategory, imgPath, workName, workPrice, workDescription) VALUES(:cat, :thumb, :nombre, :precio, :descrip)');
+                            
+                            $stmt2->execute(array(
+                                ':cat' => $Categoria,
+                                ':thumb' => $new_img_name,
+                                ':nombre' => $nombre,
+                                ':precio' => $precio,
+                                ':descrip' => $descripcion
+                            ));
+
+            
+
+                            //obtenemos el ID de la obra que se subió.
+
+                            $stmt4 = $conexion->prepare('SELECT idProduct FROM product WHERE 
+                                                        product.idCategory = :cat1 and
+                                                        product.imgPath = :thumb1');
+                            
+                            $stmt4->execute(array(
+                                ':cat1' => $Categoria,
+                                ':thumb1' => $new_img_name
+                            ));
+
+                            $current_id_prod_arr = $stmt4->fetch();
+
+                            //extraemos el ID del array
+                            $current_id_prod = $current_id_prod_arr[0];
+
+
+        
+                            //validación de etiquetas
+                            if($number > 0){
+                                for ($i=0; $i < $number; $i++) { 
+                                    if (trim($_POST["name"][$i])  != '') {
+
+                                        //echo $_POST["name"][$i] . "\n";
+
+
+                                        //insertar a la tabla stickers las etiquetas.
+                                        $stmt3 = $conexion->prepare('INSERT INTO stickers (idProduct, sticker) VALUES(:id, :stick)');
+                                        $stmt3->execute(array(
+                                            ':id' => $current_id_prod,
+                                            ':stick' => $_POST["name"][$i]
+                                        ));
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                echo "Enter a name";
+                            }         
+
+
+
+
                         
                         //Guardamos la imagen en la ruta correspondiente.
-                        //move_uploaded_file($tmp_name, $img_upload_path);
+                        move_uploaded_file($tmp_name, $img_upload_path);
+                        $signal = true;
                     } 
                     else 
                     {
-                        echo "You can't upload files of this type";
+                        $em .= "<li>No se permite este tipo de extensión como imágen.</li>";
                     }
                 }
             } 
             else 
             {
-                echo "Unknown error ocurred!";
+                $em .= "<li>Error inesperado.</li>";
             }
 
-
-            $nombre = limpiarDatos(filter_var($_POST['nombre'], FILTER_SANITIZE_STRING));
-            $Categoria = limpiarDatos(filter_var(strtolower($_POST['ddl_categoria']), FILTER_SANITIZE_STRING));
-            $descripcion = limpiarDatos(filter_var($_POST['descripcion'], FILTER_SANITIZE_STRING));
-            $pesos = limpiarDatos(filter_var(strtolower($_POST['pesos']), FILTER_SANITIZE_STRING));    
-            $centavos = limpiarDatos(filter_var(strtolower($_POST['cents']), FILTER_SANITIZE_STRING));
-            $precio = "$pesos.$centavos";
-            $number = count($_POST["name"]);
-
-            // echo $nombre ."\n";
-            // echo $Categoria ."\n";
-            // echo $descripcion ."\n";
-            // echo $precio ."\n";
-
-
-            if($number > 0){
-                for ($i=0; $i < $number; $i++) { 
-                    if (trim($_POST["name"][$i])  != '') {
-                        echo $_POST["name"][$i] . "\n";
-                    }
-                }
-            }
-            else
-            {
-                echo "Enter a name";
-            }         
-
+         
 
             
         }
