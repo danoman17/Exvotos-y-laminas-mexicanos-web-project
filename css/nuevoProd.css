@@ -157,6 +157,12 @@ body {
     left: 8px;
     
 }
+.contenedorGeneral .contenido .tarj .formulario .extra_img {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+}
 
 .contenedorGeneral .contenido .tarj .formulario .elemento {
     width: auto;
@@ -320,13 +326,10 @@ input::-webkit-inner-spin-button {
 .contenedorGeneral .contenido .tarj .izqu .elemento .image-preview{
     width: 100%;
     height: auto;
-    
     margin-top: 30px;
-
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-weight: bold;
     color: #000;
 }
 

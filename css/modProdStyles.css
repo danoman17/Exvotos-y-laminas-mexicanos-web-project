@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.contenedorGeneral {
+    display: flex;
+}
+
+/* Lateral navbar-------------------------------*/
+.contenedorGeneral header{
+    height: 100vh;
+    width: 12%;
+ 
+}
+
+.contenedorGeneral header .indices {
+    height: 100%;
+    width: 100%;
+  
+}
+
+.contenedorGeneral header .indices .encabezado {
+    display: flex;
+    justify-content: center;
+    background: #EFC241;
+    align-items: center;
+    font-family: "Oswald", Arial, Sans-serif;
+    font-size: 30px;
+    height: 10%;
+}
+
+.contenedorGeneral header .indices ul{    
+    height: 100%;
+    width: 100%;
+}
+
+
+.contenedorGeneral header .indices ul li{ 
+    height: 18%;
+    width: 100%;
+}
+
+.contenedorGeneral header .indices ul li a {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    background: #1b2845;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedorGeneral header .indices ul .flecha_derecha {
+    position: absolute;
+    left: 10%;
+}
+
+.contenedorGeneral header .indices ul li a:hover { 
+    background: #5d7dc0;
+
+}
+
+
+.contenedorGeneral header .indices ul li a i {
+    margin-right: 10%;
+    font-size: 25px;
+}
+
+
+/*Container */
+
+.contenedorGeneral .contenido{
+
+    height: 100vh;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #f6f4f5;
+}
+
+
+
+.contenedorGeneral .contenido h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    position: relative;
+    top: -50px;
+}
+
+/*Contenedor de la tabla*/
+.contenedorGeneral .contenido .container_tables{
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    /* background: #eef4d4; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+    position: relative;
+    top: 15px;
+}
+
+.contenedorGeneral .contenido .container_tables table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+    padding: 50px;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(161,161,161,0.7);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(161,161,161,0.7);
+    box-shadow: 0px 0px 9px 3px rgba(161,161,161,0.7);
+}
+
+.contenedorGeneral .contenido table tr th {
+    /* text-align: left; */
+    padding: 8px;
+    border-bottom: 1px solid #1b2845;
+    font-size: 1.2rem;
+}
+
+.contenedorGeneral .contenido table tr td {
+    /* text-align: left; */
+    padding: 5px 15px 5px 15px;
+    border-bottom: 1px solid #c2c2c2;
+    height: 100px;
+    max-width: 30px;
+    
+}
+
+.contenedorGeneral .contenido .container_tables img {
+    display: none;
+}
+
+.contenedorGeneral .contenido .overlay {
+    /* display: flex; */
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 89.1%;
+    
+}
+
+.contenedorGeneral .contenido .overlay img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.contenedorGeneral .contenido .overlay button {
+    position: relative;
+    left: 500px;
+}
+
+.contenedorGeneral .contenido .overlay.open {
+    display: flex;
+}
+
+
+/*Renglon Nombre*/
+td:nth-child(1){
+    width: 15%;
+    font-size: 20px;
+}
+/*Renglon Descripcion*/
+td:nth-child(2){
+    width: 40%;
+}
+/*Renglon Imagen*/
+td:nth-child(3){
+    width: 15%;
+    text-align: center;
+}
+
+td:nth-child(3) label{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+td:nth-child(3) label .btn_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    color: #fff;
+}
+
+
+
+/*Renglon Precio*/
+td:nth-child(4){
+    width: 15%;
+    text-align: center;
+    font-size: 20px;
+}
+/*Renglon Modificar*/
+td:nth-child(5){
+    width: 15%;
+    text-align: center;
+}
+
+td:nth-child(5) a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td:nth-child(5) a .btn_edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 40px;
+    border-radius: 50px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    color: #fff;
+}
+
+
+
+/*Fluctuaciones de color para cada fila*/
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+

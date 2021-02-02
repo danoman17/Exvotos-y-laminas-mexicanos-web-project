@@ -19,9 +19,9 @@
                     <ul>
                         <li class="encabezado">Menu</li>
                         <li><a href="../admin/configAdmin.php" id="btn-sobremi"><i class="fas fa-user"></i>Configuración<i class="fas fa-caret-right flecha_derecha"></i></a></li>
-                        <li><a href="#" id="btn-ubiacacion"><i class="fas fa-plus-square"></i>Nuevo<i class="fas fa-caret-right flecha_derecha"></i></a></li>
-                        <li><a href="#" id="btn-contacto"><i class="fas fa-edit"></i>Modificar<i class="fas fa-caret-right flecha_derecha"></i></a></li>
-                        <li><a href="#" id="btn-catalogo"><i class="fas fa-eraser"></i>Eliminar<i class="fas fa-caret-right flecha_derecha"></i></a></li>
+                        <li><a href="../admin/nuevoProd.php" id="btn-ubiacacion"><i class="fas fa-plus-square"></i>Nuevo<i class="fas fa-caret-right flecha_derecha"></i></a></li>
+                        <li><a href="../admin/modProd.php" id="btn-contacto"><i class="fas fa-edit"></i>Modificar<i class="fas fa-caret-right flecha_derecha"></i></a></li>
+                        <li><a href="../admin/delProd.php" id="btn-catalogo"><i class="fas fa-eraser"></i>Eliminar<i class="fas fa-caret-right flecha_derecha"></i></a></li>
                         <li><a href="../admin/cerrar.php" id="btn-catalogo"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión<i class="fas fa-caret-right flecha_derecha"></i></a></li>
                     </ul>
                 </div>
@@ -67,12 +67,12 @@
 
                     <div class="izqu">
                         <div class="elemento">
-                            <p>Imagen</p>
+                            <p>Imagen</p> <p class="extra_img">Preferentemente de 500x400</p>
                             <input type="file" name="my_image" id ="inpFile" class="inputfile">
-                            <label for="inpFile"><i class="fas fa-cloud-upload-alt"></i>  &nbsp;  Eliga una imagen</label>
+                            <label for="inpFile"><i class="fas fa-cloud-upload-alt"></i>  &nbsp;  Eliga una imágen</label>
                             <div class="image-preview" id="imagePreview">
                                 <img src="" alt="Image Preview" class="image-preview__image">
-                                <span class="image-preview__default-text">Image Preview</span>
+                                <span class="image-preview__default-text">Imagen seleccionada.</span>
 
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                         <!-- tabla de etiquetas -->
 
                         <div class="cointainer">
-                            <p>Etiquetas del producto</p>
+                            <p>Etiquetas del producto</p><p class="extra_img">Máximo 5</p>
                                 <table class="table table-bordered" id="dynamic_field">
                                     <tr>
                                         <td><input type="text" name="name[]" id="name" palceholder="Enter sticker" class="form-control name_list" required></td>
