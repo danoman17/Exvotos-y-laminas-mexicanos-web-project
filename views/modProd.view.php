@@ -12,20 +12,8 @@
     
     <div class="contenedorGeneral">
 
-    <header>
-            
-            <div class="indices">
-                <ul>
-                    <li class="encabezado">Menu</li>
-                    <li><a href="../admin/configAdmin.php" id="btn-sobremi"><i class="fas fa-user"></i>Configuración<i class="fas fa-caret-right flecha_derecha"></i></a></li>
-                    <li><a href="../admin/nuevoProd.php" id="btn-ubiacacion"><i class="fas fa-plus-square"></i>Nuevo<i class="fas fa-caret-right flecha_derecha"></i></a></li>
-                    <li><a href="../admin/modProd.php" id="btn-contacto"><i class="fas fa-edit"></i>Modificar<i class="fas fa-caret-right flecha_derecha"></i></a></li>
-                    <li><a href="../admin/delProd.php" id="btn-catalogo"><i class="fas fa-eraser"></i>Eliminar<i class="fas fa-caret-right flecha_derecha"></i></a></li>
-                    <li><a href="../admin/cerrar.php" id="btn-catalogo"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión<i class="fas fa-caret-right flecha_derecha"></i></a></li>
-                </ul>
-            </div>
-
-    </header>
+    <?php include '../views/header_admin.html'; ?>
+    
 
         <div class="contenido">
             <h2>Modificar un objeto.</h2>
@@ -55,7 +43,7 @@
                                 </label>
                             </td>
                             <td> $ <?php echo $items['4'];?></td>
-                            <td><a href=""> <div class="btn_edit">Editar</div> </a></td>
+                            <td><a href="../admin/EditPanel.php?name=<?php echo $items['3'];?>&id=<?php echo $items['0'];?>"> <div class="btn_edit">Editar</div> </a></td>
                         </tr>
 
                    <?php endforeach;?>
@@ -64,8 +52,8 @@
 
             <div class="overlay">
                 <div class="overlay-inner">
-                    <button class="close">Cerrar</button>
                     <img src="" alt="">
+                    <button class="close">X</button>
                 </div>
             </div>
         </div>

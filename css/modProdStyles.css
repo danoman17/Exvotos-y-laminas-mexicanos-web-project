@@ -153,6 +153,8 @@ body {
     display: none;
 }
 
+
+/*Overlay Imagen*/
 .contenedorGeneral .contenido .overlay {
     /* display: flex; */
     display: none;
@@ -165,20 +167,40 @@ body {
     width: 89.1%;
     
 }
+.contenedorGeneral .contenido .overlay .overlay-inner{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .contenedorGeneral .contenido .overlay img {
     max-width: 500px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .contenedorGeneral .contenido .overlay button {
     position: relative;
-    left: 500px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background: #f44336;
+    border-radius: 10px;
 }
 
 .contenedorGeneral .contenido .overlay.open {
     display: flex;
 }
+
+
 
 
 /*Renglon Nombre*/
