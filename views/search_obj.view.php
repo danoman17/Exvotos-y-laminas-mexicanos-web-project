@@ -19,8 +19,17 @@
             <h2>Modificar un objeto.</h2>
             <!-- barra de busqueda -->
 
-            <form action="search_obj.php" method="get">
-            <input type="text" placeholder ="Busqueda de nombre" class ="barra_busqueda" id="barra_busqueda" name="busqueda">
+            <?php 
+            
+                $busqueda = strtolower($_REQUEST['busqueda']);
+                if(empty($busqueda)){
+                    header('Location: ../admin/modProd.php');
+                }
+            
+            ?>
+
+            <form action="../admin/search_obj.php" method="get">
+            <input type="text" placeholder ="Busqueda de nombre" class ="barra_busqueda" id="barra_busqueda" name="busqueda" value="<?php echo $busqueda;?>">
             <input type="submit" value="Buscar" class="btn_search">
             </form>
 
@@ -90,9 +99,6 @@
             }
             button.forEach(button => button.addEventListener('click', open));
             overlay.addEventListener('click',close);
-
-
-            // console.log(overlay);
         </script>
 		
 </body>

@@ -156,6 +156,13 @@ body {
     left: 8px;
     
 }
+
+
+/*Input tipo text para poder obtener el id*/
+
+.contenedorGeneral .contenido .tarj .formulario #id_text {
+    display: none;
+}
 .contenedorGeneral .contenido .tarj .formulario .extra_img {
     display: block;
     font-size: 12px;
@@ -370,3 +377,4 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 
 }
+

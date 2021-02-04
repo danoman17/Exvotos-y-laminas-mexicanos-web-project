@@ -282,3 +282,37 @@ tr:nth-child(odd) {
 }
 
 
+/*Barra de Busqueda*/
+.contenedorGeneral .contenido form {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1rem;
+}
+.contenedorGeneral .contenido #barra_busqueda {
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.contenedorGeneral .contenido form .btn_search {
+    text-decoration: none;
+    background: #3c6997;
+    color: #fff;
+    padding: 0 20px;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 0px 20px;
+    height: 40px;
+
+}

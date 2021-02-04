@@ -18,9 +18,9 @@
         <div class="contenido">
         <div class="tarj">
                 <h1>Editar Producto</h1>
-
+                
                 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="formulario" method="POST" enctype="multipart/form-data">
-
+                            <input type="text" name ="id" class="id_text" id="id_text" value="<?php echo $result_obj['0'];?>">
                     <div class="derecha">
                             <div class="elemento">
                                 <p>Nombre de la obra</p>
@@ -54,7 +54,7 @@
                     <div class="izqu">
                         <div class="elemento">
                             <p>Imagen</p> <p class="extra_img">Preferentemente de 500x400</p>
-                            <input type="file" name="my_image" id ="inpFile" class="inputfile">
+                            <input type="file" name="my_image" id ="inpFile" class="inputfile" accept ="image/*">
                             <label for="inpFile"><i class="fas fa-cloud-upload-alt"></i>  &nbsp;  Eliga una imágen</label>
                             <div class="image-preview" id="imagePreview">
                                 <img src="<?php echo $img_rute;?>" alt="Image Preview" class="image-preview__image">
@@ -69,10 +69,12 @@
                         <div class="cointainer">
                             <p>Etiquetas del producto</p><p class="extra_img">Máximo 5</p>
                                 <table class="table table-bordered" id="dynamic_field">
+                                    
                                     <tr>
-                                        <td><input type="text" name="name[]" id="name" palceholder="Enter sticker" class="form-control name_list" required></td>
+                                        <td><input type="text" name="name[]" id="name" placeholder="Enter sticker" class="form-control name_list" value="<?php echo $resul_stickers['0']['1'];?>" required></td>
                                         <td><i name="add" id="add" class="btn btn-succes">+</i></td>
                                     </tr>
+                                    
                                 </table>
                         </div>
 
@@ -88,6 +90,8 @@
                 </form>
 
                 <?php if(!empty($em)):?>
+                    
+                    <?php header("Location: modProd.php");?>
                 <div class="errores">
                     <ul>
                         <?php echo $em;?>
@@ -100,8 +104,8 @@
             
             <?php if($signal == true):?>
                 <div class="confirmation">
-                    <p>Registro Finalizado con exito</p>
-                    <i class="fas fa-times" id="close"></i>
+                    <p>Actualización Finalizada con exito</p>
+                    <a href="modProd.php"><i class="fas fa-times" id="close"></i></a>
                 </div>
             <?php  endif;?>
 
@@ -128,11 +132,15 @@
     
         $(document).ready(function(){
                 var i = 1;
+                <?php for ($i=1; $i < count($resul_stickers); $i++):?>
+                    i++;
+                    $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" id="name" value="<?php echo $resul_stickers[$i]['1'];?>" placeholder="Enter sticker" class="form-control name_list" required></td><td><i name="remove" id="'+i+'" class="btn btn-danger btn-remove">-</i></td></tr>');    
+                <?php endfor;?>
                 $('#add').click(function(){
                     
                     if (i < 5) {
                         i++;
-                        $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" id="name" palceholder="Enter sticker" class="form-control name_list" required></td><td><i name="remove" id="'+i+'" class="btn btn-danger btn-remove">-</i></td></tr>');    
+                        $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" id="name" placeholder="Enter sticker" class="form-control name_list" required></td><td><i name="remove" id="'+i+'" class="btn btn-danger btn-remove">-</i></td></tr>');    
                     }
                     
                 });
@@ -184,6 +192,15 @@
     </script>
 
 
+
+    <!-- script para mandar a usuario a busqueda -->
+    <?php if($signal): ?>
+    <script>
+        setTimeout(function(){
+            window.location.href = 'modProd.php';
+            }, 3000);
+    </script>
+    <?php endif;?>
      
 		
 </body>
