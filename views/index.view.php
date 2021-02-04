@@ -12,24 +12,7 @@
 <body>
 
 
-	<header>
-		<div class="contenedor">
-			<div class="logo izquierda">
-				<a href="index.php"><img src="http://localhost/ExvotosMexicanos/img/Em.jpg" alt="" class="imagen_logo"></a>
-				<div class="nombre_header">Láminas y Exvotos Mexicanos</div></a>
-			</div>
-			<div class="derecha">
-				<ul>
-					<li><a href="#" id="btn-home"><i class="icono fas fa-home"></i>Inicio</a></li>
-					<li><a href="#" id="btn-sobremi"><i class="icono far fa-user"></i>Sobre mi</a></li>
-					<li><a href="#" id="btn-ubiacacion"><i class="icono fas fa-map-marker-alt"></i>Ubicación</a></li>
-					<li><a href="#" id="btn-contacto"><i class="icono fas fa-inbox"></i>Contacto</a></li>
-					<li><a href="catalogo.php" id="btn-catalogo"><i class="icono fas fa-palette"></i>Catálogo</a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
-
+	<?php include 'header_index.html';	?>
 
 
 

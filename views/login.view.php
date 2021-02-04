@@ -9,7 +9,11 @@
     <title>Iniciar Sesion</title>
 </head>
 <body>
+<?php include 'header_simplify_login.html';?>
     <div class="contenedorGeneral">
+
+		
+	
 
 		<div class="contenedor">
 			<h3>LOGIN</h3>
@@ -32,7 +36,7 @@
 			</form>
 			
 			
-				<a href="#">Olvide mi contraseña</a>
+				<!-- <a href="#">Olvide mi contraseña</a> -->
 			
 
 		</div>

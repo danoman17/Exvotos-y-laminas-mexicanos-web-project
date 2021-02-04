@@ -5,27 +5,18 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/fdd2e8457c.js" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+	<script src="js/catalogoGaleria.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="css/catalogueStyles.css">
 	<title>Catalogo</title>
 </head>
 <body>
 
-
-	<header>
-		<div class="heder">
-			<div class="logo_h izquierda">
-				<a href="index.php"><img src="http://localhost/ExvotosMexicanos/img/Em.jpg" alt="" class="imagen_logo"></a>
-				<div class="nombre_header">Láminas y Exvotos Mexicanos</div></a>
-			</div>
-			<div class="derecha">
-				<ul>
-					<li><a href="index.php" id="btn-home"><i class="icono fas fa-home"></i>Inicio</a></li>
-					
-				</ul>
-			</div>
-		</div>
-	</header>
-
+	
+	 <?php include 'header_simplify_cat.html';?>
 
 
 	<div class="contenedor">
@@ -135,9 +126,7 @@
 
 
 
-	<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
-	<script src="js/catalogoGaleria.js"></script>
+
 	
 	
 

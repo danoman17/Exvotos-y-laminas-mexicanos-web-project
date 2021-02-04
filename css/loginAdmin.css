@@ -14,7 +14,88 @@ body {
     background: #f2f2f2;
 }
 
+/*Header*/
+.heder {
+	max-width: 1500px;
+	width: 90%;
+	margin: auto;
+    height: 100px;
+    padding: 0 0;
+}
 
+.izquierda {
+    float: left;
+    
+}
+
+.derecha {
+	float: right;
+}
+.imagen_logo {
+	width: 100px;
+	height: 90px;
+	float: left;
+	padding: 8px;
+	margin-top: 5px;
+    position: relative;
+    
+}
+
+header {
+	color:#000;
+	background: #EFC241;
+}
+
+header .heder {
+	overflow: hidden;
+}
+
+header .logo_h {
+	max-width: 600px;
+}
+
+header .logo_h .nombre_header {
+	color: #000;
+	font-family: "Oswald", Arial, Sans-serif;
+	font-size: 28px;
+	margin: 15px 0 0 150px;
+	width: 250px;
+}
+
+header .derecha ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header .derecha ul li {
+	line-height: 100px;
+}
+
+header .derecha ul li a {
+	color: #000;
+	display: block;
+	padding: 0px 20px;
+	font-size: 18px;
+	transition: all .1s ease;
+    position: relative;
+    text-decoration: none;
+}
+
+header .derecha ul li a:hover {
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+}
+
+header .derecha ul li a .icono {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+
+/*Contenido*/
 .contenedorGeneral {
     height: 100vh;
     width: auto;
@@ -27,6 +108,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     
 }
 
@@ -45,6 +127,9 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 20px 40px;
+    position: relative;
+    top: -30px;
+    
 }
 
 .contenedor h3 {
