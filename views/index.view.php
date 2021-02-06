@@ -37,9 +37,11 @@
 				<div class="caja2"></div>
 			</div>
 		</div>
+		
 		<a href="" class="boton1" id="btn-1">
 			<div><i class="fas fa-chevron-down"></i></div>
 		</a>
+		
 		</div>
 
 

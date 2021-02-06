@@ -105,6 +105,148 @@ header .derecha ul li a .icono {
 	margin-right: 5px;
 }
 
+/*Responsive part*/
+.check_btn{
+	font-size: 30px;
+	color: #fff;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+@media (max-with: 925px){
+	header .logo {
+		max-width: 400px;
+		padding-left: 50px;
+	}
+	header .logo .nombre_header {
+		font-size: 20px;
+	}
+
+	
+	header .derecha ul li a {
+		font-size: 16px;
+	}
+}
+
+/*Responsive for header*/
+@media (max-width: 500px){
+	.check_btn{
+		display: block;
+		margin-right: 20px;
+		height: auto;
+		margin-top: 10px;
+	}
+
+	header .derecha ul{
+		position: absolute;
+		width: 100%;
+		height: 90vh;
+		background: #2c3e50;
+		top: 100px;
+		left: -100%;
+		text-align: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		transition: all .5s;
+		z-index: 3;
+	}
+	header .derecha ul li{
+		display: block;
+		width: 100%;
+	}
+
+	header .derecha ul li a{
+		font-size: 20px;
+
+	}
+	header .derecha ul li a:hover, a.active{
+		background: none;
+		color: #0082e6;
+	}
+
+	.contenedor input[type="checkbox"]:checked ~ .derecha ul{
+		left: 0;
+		z-index: 3;
+	}
+
+	.imagen_logo {
+		position: absolute;
+		width: 90px;
+		height: 85px;
+
+	}
+	header .logo .nombre_header {
+		font-size: 20px;
+		position: absolute;
+		margin: 25px 0 0 90px;
+		width: 200px;
+
+	}
+
+}
+
+@media (max-width: 800px){
+	.check_btn{
+		display: block;
+		margin-right: 20px;
+		height: auto;
+		margin-top: 10px;
+	}
+
+	header .derecha ul{
+		position: absolute;
+		width: 100%;
+		height: 90vh;
+		background: #2c3e50;
+		top: 100px;
+		left: -100%;
+		text-align: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		transition: all .5s;
+		z-index: 3;
+	}
+	header .derecha ul li{
+		display: block;
+		width: 100%;
+	}
+
+	header .derecha ul li a{
+		font-size: 20px;
+
+	}
+	header .derecha ul li a:hover, a.active{
+		background: none;
+		color: #0082e6;
+	}
+
+	.contenedor input[type="checkbox"]:checked ~ .derecha ul{
+		left: 0;
+		z-index: 4;
+	}
+
+	.imagen_logo {
+		position: absolute;
+		width: 90px;
+		height: 85px;
+
+	}
+	header .logo .nombre_header {
+		font-size: 20px;
+		position: absolute;
+		margin: 25px 0 0 90px;
+		width: 200px;
+
+	}
+
+}
 
 
 /*cuerpo de pagina*/
@@ -165,6 +307,8 @@ header .derecha ul li a .icono {
 	margin-top: 60px;
 }
 
+
+
 .caja1 {
 	
 	width: 470px;
@@ -172,16 +316,14 @@ header .derecha ul li a .icono {
 	background-image: url("../img/12.jpg");
   	background-position: center;
   	background-repeat: no-repeat;
- 	 background-size: cover;
+ 	background-size: cover;
 	border-radius: 10px;
-
 }
 
 .caja2 {
-
 	width: 470px;
 	height: 350px;
-	background-color: blue;
+	
 	background-image: url("../img/13.jpg");
   	background-position: center;
   	background-repeat: no-repeat;
@@ -191,7 +333,8 @@ header .derecha ul li a .icono {
 }
 
 
-.boton1 {
+
+ .boton1 {
 	width: 200px;
 	height: 70px;
 	border-radius: 50px;
@@ -204,6 +347,125 @@ header .derecha ul li a .icono {
 	transition: all .3s ease-in;
 	
 }
+
+@media all and (max-width:500px){
+	.hoja1 {
+		flex-direction: column;
+		height: 100vh;
+		justify-content: flex-start;
+	}
+
+	.intro{
+		width: 90%;
+		height: 30%;
+		padding: 10px;
+		margin: 0;
+		margin: 20px 0px;
+		min-height: 50%;
+	}
+
+	.intro .contenido_intro p {
+		font-size: .75rem;
+	}
+
+	.intro .contenido_intro h1 {
+		font-size: 18px;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.imagenes {
+		flex-direction: column;
+		width: 100%;
+		margin-top: 10px;
+		
+	}
+
+	.caja1{
+		border-radius: 5px;
+		width: 70%;
+		height: 60%;
+		margin: 100px 0 0 40%;
+		z-index: 1;
+
+	}
+	.caja2{
+		width: 59%;
+		height: 30%;
+		margin: 0;
+		margin-right: 140px;
+		position: absolute;
+		z-index: 0;
+		
+	}
+
+	 .boton1 {
+		display: none;
+	}
+
+}
+
+
+@media all and (max-width:800px){
+	.hoja1 {
+		flex-direction: column;
+		height: 100vh;
+		justify-content: flex-start;
+	}
+
+	.intro{
+		width: 60%;
+		height: 20%;
+		padding: 20px;
+		margin: 0;
+		margin: 20px 0px;
+		min-height: 40%;
+	}
+
+	.intro .contenido_intro p {
+		font-size: 1rem;
+	}
+
+	.intro .contenido_intro h1 {
+		font-size: 20px;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.imagenes {
+		flex-direction: column;
+		width: 100%;
+		margin-top: 10px;
+		
+	}
+
+	.caja1{
+		border-radius: 5px;
+		width: 70%;
+		height: 60%;
+		margin: 100px 0 0 40%;
+		z-index: 1;
+
+	}
+	.caja2{
+		width: 59%;
+		height: 30%;
+		margin: 0;
+		margin-right: 140px;
+		position: absolute;
+		z-index: 0;
+		
+	}
+
+	 .boton1 {
+		position: absolute;
+		bottom: 40%;
+		left: -8%;
+		z-index: 3;
+	}
+
+}
+
+
+
 
 
 .boton1 div i {
@@ -314,6 +576,74 @@ header .derecha ul li a .icono {
 }
 
 
+@media all and (max-width:500px){
+	.persona .contenedor_persona {
+		flex-direction: column-reverse;
+		height: 95%;
+		width: 100%;
+		
+	}
+
+	.persona .imagen_persona {
+		width: 90%;
+		height: 50%;
+		margin: 0 0 10px 0;
+	}
+
+	.persona .sobremi{
+		height: 50%;
+		width: 90%;
+		margin: 0 0 10px 0;
+		padding: 12px 5px;
+	}
+
+	.persona .sobremi h2{
+		font-size: 2em;
+	}
+
+	.persona .sobremi p {
+		font-size: .85em;
+	}
+
+	.persona .sobremi a i {
+		font-size: 2em;
+	}
+}
+
+
+@media all and (max-width:800px){
+	.persona .contenedor_persona {
+		flex-direction: column-reverse;
+		height: 95%;
+		width: 100%;
+		
+	}
+
+	.persona .imagen_persona {
+		width: 90%;
+		height: 50%;
+		margin: 0 0 10px 0;
+	}
+
+	.persona .sobremi{
+		height: 50%;
+		width: 90%;
+		margin: 0 0 10px 0;
+		padding: 12px 5px;
+	}
+
+	.persona .sobremi h2{
+		font-size: 2em;
+	}
+
+	.persona .sobremi p {
+		font-size: 1.5em;
+	}
+
+	.persona .sobremi a i {
+		font-size: 3em;
+	}
+}
 
 /*-Adress- section*/
 
@@ -379,6 +709,68 @@ header .derecha ul li a .icono {
 	background: rgba(164, 154, 31, 0.9);
 	border-radius: 0 20px 20px 0;
 }
+
+@media all and (max-width:500px){
+	.ubicacion {
+		flex-direction: column;
+		height: 90%;
+		width: 100%;
+	}
+	.ubicacion .direccion {
+		width: 100%;
+		height: 30%;
+		border-radius: 0px;
+	}
+	.ubicacion .direccion h2 {
+		font-size: 1.5em;
+	}
+
+	.ubicacion .direccion p{
+		font-size: 1em;
+		margin: 0;
+	}
+
+	.ubicacion .mapa {
+		width: 100%;
+		border-radius: 0px;
+	}
+
+	.ubicacion .mapa iframe {
+		width: 100%;
+		height: 100%;
+	}
+	
+}
+
+@media all and (max-width:800px){
+	.ubicacion {
+		flex-direction: column;
+		height: 90%;
+		width: 100%;
+	}
+	.ubicacion .direccion {
+		width: 100%;
+		height: 30%;
+		border-radius: 0px;
+	}
+	.ubicacion .direccion h2 {
+		font-size: 1.5em;
+	}
+
+	.ubicacion .direccion p{
+		font-size: 1em;
+		margin: 0;
+	}
+
+	.ubicacion .mapa {
+		width: 100%;
+		border-radius: 0px;
+	}
+
+	
+	
+}
+
 
 
 /* contact and explore section */
@@ -460,8 +852,8 @@ header .derecha ul li a .icono {
 	justify-content: center;
 	border-radius: 50px;
 	-webkit-box-shadow: 9px 9px 17px -3px rgba(0,0,0,0.75);
--moz-box-shadow: 9px 9px 17px -3px rgba(0,0,0,0.75);
-box-shadow: 9px 9px 17px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 9px 17px -3px rgba(0,0,0,0.75);
+	box-shadow: 9px 9px 17px -3px rgba(0,0,0,0.75);
 
 }
 
@@ -474,6 +866,38 @@ box-shadow: 9px 9px 17px -3px rgba(0,0,0,0.75);
 
 
 }
+
+@media all and (max-width:800px){
+	.seccion4 .hechos{
+		height: auto;
+	}
+	.seccion4 .hechos .box {
+		flex-wrap: wrap;
+	}
+
+	.seccion4 .hechos .box .contenido_hechos i {
+		font-size: 1em;
+	}
+
+	.seccion4 .hechos .box .contenido_hechos {
+		font-size: 1em;
+		height: 100px;
+		width: 150px;
+	}
+	.seccion4 .hechos .boton_section4 {
+		height: 100px;
+	}
+
+	.seccion4 .hechos .boton_section4 .boton_explorar {
+		width: 200px;
+		height: 50px;
+	}
+
+	.seccion4 .hechos .boton_section4 .boton_explorar a {
+		font-size: 1.5rem;
+	}
+}
+
 
 /*Social media and contact part*/
 
@@ -580,7 +1004,149 @@ box-shadow: 9px 9px 17px -3px rgba(0,0,0,0.75);
 	margin-top: 10px;
 
 }
+@media all and (max-width:500px){
 
+	.seccion4 .contacto{
+		height: 52%;
+	}
+	.seccion4 .contacto .texto_contacto h2 {
+		font-size: 1.9rem;
+	}
+
+	.seccion4 .contacto .redes_sociales {
+		justify-content: space-evenly;
+	}
+
+	.seccion4 .contacto .redes_sociales .contenedor_contacto {
+		padding: 0;
+		width: 20%;
+		height: 45%;
+		margin-top: 0;
+		
+	}
+
+
+	
+.seccion4 .contacto .redes_sociales .contenedor_contacto .logo_red_face  {
+	width: 100%;
+	height: 90%;
+	border-radius: 10px;
+	background: #3B5997;
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	color: #fff;
+	
+	
+}
+
+.seccion4 .contacto .redes_sociales .contenedor_contacto .logo_red_whats {
+	width: 100%;
+	height: 90%;
+	border-radius: 10px;
+	background: #108D7D;
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	color: #fff;
+}
+.seccion4 .contacto .redes_sociales .contenedor_contacto .logo_red_insta {
+	width: 100%;
+	height: 90%;
+	border-radius: 10px;
+	background: #C73283;
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	color: #fff;
+}
+
+.seccion4 .contacto .redes_sociales a p {
+	display: none;
+}
+
+
+
+}
+
+
+
+@media all and (max-width:800px){
+
+	.seccion4 .contacto{
+		height: 80%;
+	}
+	.seccion4 .contacto .texto_contacto h2 {
+		font-size: 3rem;
+	}
+
+	.seccion4 .contacto .redes_sociales {
+		justify-content: space-evenly;
+	}
+
+	.seccion4 .contacto .redes_sociales .contenedor_contacto {
+		padding: 0;
+		width: 20%;
+		height: 45%;
+		margin-top: 0;
+		
+	}
+
+
+	
+.seccion4 .contacto .redes_sociales .contenedor_contacto .logo_red_face  {
+	width: 100%;
+	height: 90%;
+	border-radius: 10px;
+	background: #3B5997;
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	color: #fff;
+	
+	
+}
+
+.seccion4 .contacto .redes_sociales .contenedor_contacto .logo_red_whats {
+	width: 100%;
+	height: 90%;
+	border-radius: 10px;
+	background: #108D7D;
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	color: #fff;
+}
+.seccion4 .contacto .redes_sociales .contenedor_contacto .logo_red_insta {
+	width: 100%;
+	height: 90%;
+	border-radius: 10px;
+	background: #C73283;
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	color: #fff;
+}
+
+.seccion4 .contacto .redes_sociales a p {
+	display: none;
+}
+
+
+
+}
 
 
 /*footer section*/
@@ -622,7 +1188,7 @@ footer .footer_2 a .face {
 	color: #fff;
 	list-style: none;
 	border: 3px solid #000;
-	margin-right: 100px;
+	margin-right: 50px;
 	transition: all .3s ease;
 }
 
@@ -644,7 +1210,7 @@ footer .footer_2 a .insta {
 	color: #fff;
 	list-style: none;
 	border: 3px solid #000;
-	margin-left: : 100px;
+	margin-left: 50px;
 	transition: all .3s ease;
 }
 
@@ -674,3 +1240,16 @@ footer .pie_pagina {
 }
 
 
+@media all and (max-width:800px){
+
+	footer .texto_footer {
+		font-size: 1em;
+		height: auto;
+	}
+
+	footer .pie_pagina {
+		text-align: center;
+		font-size: .8em;
+
+	}
+}

@@ -6,9 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/fdd2e8457c.js" crossorigin="anonymous"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
-	<script src="js/catalogoGaleria.js"></script>
+
 	
 	<link rel="stylesheet" type="text/css" href="css/catalogueStyles.css">
 	<title>Catalogo</title>
@@ -124,7 +122,9 @@
 
 
 
-
+		<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+	<script src="js/catalogoGaleria.js"></script>
 
 
 	
