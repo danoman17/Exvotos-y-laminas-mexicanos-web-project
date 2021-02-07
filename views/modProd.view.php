@@ -11,7 +11,10 @@
 <body>
     
     <div class="contenedorGeneral">
-
+    <input type="checkbox" id="check" >
+			    <label for="check" class="check_btn">
+				    <i class="fas fa-bars"></i>
+			    </label>
     <?php include '../views/header_admin.html'; ?>
     
 
@@ -71,29 +74,7 @@
 
     	
         <script src="../js/jquery-3.5.1.min.js"></script>
-        
-        <script>
-            const button = document.querySelectorAll('.btn_img');
-            const overlay = document.querySelector('.overlay');
-            const overlayImage = document.querySelector('.overlay-inner img');
-
-            function open(a){
-                overlay.classList.add('open');
-                const src = a.target.parentNode.parentNode.querySelector('img').src;
-                console.log(src);
-
-                overlayImage.src = src;
-            }
-
-            function close(){
-                overlay.classList.remove('open');
-            }
-            button.forEach(button => button.addEventListener('click', open));
-            overlay.addEventListener('click',close);
-
-
-            // console.log(overlay);
-        </script>
+        <script src="../js/modProd.js"></script>
 		
 </body>
 </html>

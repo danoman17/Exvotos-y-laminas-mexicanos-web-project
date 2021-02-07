@@ -24,13 +24,12 @@ body {
 .contenedorGeneral header{
     height: 100vh;
     width: 12%;
- 
+
 }
 
 .contenedorGeneral header .indices {
     height: 100%;
     width: 100%;
-  
 }
 
 .contenedorGeneral header .indices .encabezado {
@@ -82,6 +81,154 @@ body {
 .contenedorGeneral header .indices ul li a i {
     margin-right: 10%;
     font-size: 25px;
+}
+
+.check_btn{
+	font-size: 30px;
+	color: #fff;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+
+
+/*Responsive for header*/
+@media (max-width: 500px){
+
+
+    
+    .contenedorGeneral header .indices {
+        
+        width: 100%;
+    }
+
+	.check_btn{
+		display: block;
+		margin-left: 30px;
+		height: auto;
+		
+        position: absolute;
+        z-index: 2;
+	}
+    
+    .contenedorGeneral header {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		
+		left: -100%;
+		text-align: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		transition: all .5s;
+        z-index: 1;
+		
+	}
+
+    .contenedorGeneral header ul .encabezado .txt_child_one{
+		display: none;
+	}
+
+	.contenedorGeneral header .indices ul li{
+		display: block;
+		width: 100%;
+	}
+
+	.contenedorGeneral header .indices ul li a{
+		font-size: 20px;
+		
+
+	}
+
+    
+	.contenedorGeneral header .indices ul li a .flecha_derecha{
+		display: none;
+
+	}
+	.contenedorGeneral header .indices ul li a:hover, a.active{
+		background: none;
+		color: #0082e6;
+	}
+
+
+    .contenedorGeneral input[type="checkbox"]:checked ~ header{
+		left: 0;
+		
+	}
+    
+
+	
+
+}
+
+@media (max-width: 800px) and (min-width:500px) {
+
+    .contenedorGeneral header .indices {
+        
+        width: 100%;
+    }
+
+	.check_btn{
+		display: block;
+		margin-left: 30px;
+		height: auto;
+		
+        position: absolute;
+        z-index: 2;
+	}
+    
+    .contenedorGeneral header {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		
+		left: -100%;
+		text-align: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		transition: all .5s;
+        z-index: 1;
+		
+	}
+
+    .contenedorGeneral header ul .encabezado .txt_child_one{
+		display: none;
+	}
+
+	.contenedorGeneral header .indices ul li{
+		display: block;
+		width: 100%;
+	}
+
+	.contenedorGeneral header .indices ul li a{
+		font-size: 20px;
+		
+
+	}
+
+    
+	.contenedorGeneral header .indices ul li a .flecha_derecha{
+		display: none;
+
+	}
+	.contenedorGeneral header .indices ul li a:hover, a.active{
+		background: none;
+		color: #0082e6;
+	}
+
+
+    .contenedorGeneral input[type="checkbox"]:checked ~ header{
+		left: 0;
+		
+	}
+
 }
 
 
@@ -183,6 +330,114 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
     border-radius: 20px;
 }
 
+@media (max-width: 500px){
+    
+.contenedorGeneral .contenido {
+    
+    width: 100%;
+    height: 100%;
+    
+    
+    
+}
+
+.contenedorGeneral .contenido .tarj {
+    width: 90%;
+    height: 100%;
+    margin-top: 30%;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 20%;
+}
+
+
+.contenedorGeneral .contenido .tarj h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 0;
+}
+
+.contenedorGeneral .contenido .tarj .formulario {
+    width: 90%;
+    height: auto;
+}
+
+
+.contenedorGeneral .contenido .tarj .formulario p {
+    position: relative;
+    font-size: .8em;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-items:center;
+    font-weight: bold;
+    left: 8px;
+    
+}
+
+.contenedorGeneral .contenido .tarj .formulario .elemento {
+    width: auto;
+    height: auto;
+    margin: 0 0 20px 0;
+    
+}
+
+.contenedorGeneral .contenido .tarj .formulario .elemento input[type="text"] , input[type="email"] , input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+
+.contenedorGeneral .contenido .tarj .formulario  input[type="submit"] { 
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: #64CB59;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.contenedorGeneral .contenido .tarj .errores {
+    height: auto;
+    width: 90%;
+    padding: 10px;
+    background: red;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 10%;
+}
+
+}
+
+@media (max-width: 800px) and (min-width:500px) {
+    .contenedorGeneral .contenido {
+        width: 100%;
+        height: 100vh;   
+    }
+    .contenedorGeneral .contenido .tarj {
+        width: 94%;
+        height: 80%;
+        margin-top: 30%;
+        border-radius: 20px;
+        padding: 5px;
+        margin-bottom: 20%;
+    }
+}
+
+
 
 /*Succesfuly update popup */
 
@@ -215,4 +470,43 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
     right: 10px;
     cursor: pointer;
 
+}
+
+@media (max-width: 500px){
+    
+.contenedorGeneral .contenido .confirmation {
+    border-radius: 10px;
+    width: 60%;
+    height: 20%;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.contenedorGeneral .contenido .confirmation.remover {
+    display: none;
+}
+
+
+.contenedorGeneral .contenido .confirmation i {
+    position: absolute;
+    font-weight: 20px;
+    color: #fff;
+    top: -27px;
+    right: 10px;
+    cursor: pointer;
+
+}
+}
+
+
+@media (max-width: 800px) and (min-width:500px) {
+    .contenedorGeneral .contenido .confirmation {
+        border-radius: 10px;
+        width: 60%;
+        height: 20%;
+        font-size: 25px;
+        padding: 20px;
+    
+    }
 }

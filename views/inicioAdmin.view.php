@@ -12,6 +12,11 @@
     
     <div class="contenedorGeneral">
 
+        <input type="checkbox" id="check" >
+		<label for="check" class="check_btn">
+		    <i class="fas fa-bars"></i>
+		</label>
+
     <?php include '../views/header_admin.html'; ?>
 
         <div class="contenido">

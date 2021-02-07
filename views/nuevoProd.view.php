@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/fdd2e8457c.js" crossorigin="anonymous"></script>
-    <script src="../js/jquery-3.5.1.min.js"></script>
 	<link rel="stylesheet" href="../css/nuevoProd.css">
     <title>NuevoProd</title>
 </head>
@@ -13,6 +12,10 @@
     
     <div class="contenedorGeneral">
 
+        <input type="checkbox" id="check" >
+		    <label for="check" class="check_btn">
+		        <i class="fas fa-bars"></i>
+		    </label>
     <?php include '../views/header_admin.html'; ?>
 
         <div class="contenido">
@@ -54,7 +57,7 @@
                     <div class="izqu">
                         <div class="elemento">
                             <p>Imagen</p> <p class="extra_img">Preferentemente de 500x400</p>
-                            <input type="file" name="my_image" id ="inpFile" class="inputfile">
+                            <input type="file" name="my_image" id ="inpFile" class="inputfile" accept="image/*">
                             <label for="inpFile"><i class="fas fa-cloud-upload-alt"></i>  &nbsp;  Eliga una imágen</label>
                             <div class="image-preview" id="imagePreview">
                                 <img src="" alt="Image Preview" class="image-preview__image">
@@ -75,11 +78,6 @@
                                     </tr>
                                 </table>
                         </div>
-
-
-                        
-
-
 
                     </div>
 
@@ -107,15 +105,8 @@
         </div>
 
     </div>
-
-
-    <script>
-        document.getElementById("close").addEventListener("click", function(){
-            document.querySelector(".contenedorGeneral .contenido .confirmation").style.display = "none";
-        })
-
-
-    </script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/nuevoProd.js"></script>
 
     <script>
     
@@ -174,7 +165,7 @@
             }
         });
     </script>
-
+ 
 
 	
 </body>

@@ -24,13 +24,12 @@ body {
 .contenedorGeneral header{
     height: 100vh;
     width: 12%;
- 
+
 }
 
 .contenedorGeneral header .indices {
     height: 100%;
     width: 100%;
-  
 }
 
 .contenedorGeneral header .indices .encabezado {
@@ -84,6 +83,155 @@ body {
     font-size: 25px;
 }
 
+.check_btn{
+	font-size: 30px;
+	color: #fff;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+
+
+/*Responsive for header*/
+@media (max-width: 500px){
+
+
+    
+    .contenedorGeneral header .indices {
+        
+        width: 100%;
+    }
+
+	.check_btn{
+		display: block;
+		margin-left: 30px;
+		height: auto;
+		
+        position: absolute;
+        z-index: 2;
+	}
+    
+    .contenedorGeneral header {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		
+		left: -100%;
+		text-align: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		transition: all .5s;
+        z-index: 1;
+		
+	}
+
+    .contenedorGeneral header ul .encabezado .txt_child_one{
+		display: none;
+	}
+
+	.contenedorGeneral header .indices ul li{
+		display: block;
+		width: 100%;
+	}
+
+	.contenedorGeneral header .indices ul li a{
+		font-size: 20px;
+		
+
+	}
+
+    
+	.contenedorGeneral header .indices ul li a .flecha_derecha{
+		display: none;
+
+	}
+	.contenedorGeneral header .indices ul li a:hover, a.active{
+		background: none;
+		color: #0082e6;
+	}
+
+
+    .contenedorGeneral input[type="checkbox"]:checked ~ header{
+		left: 0;
+		
+	}
+    
+
+	
+
+}
+
+@media (max-width: 800px) and (min-width:500px) {
+
+    .contenedorGeneral header .indices {
+        
+        width: 100%;
+    }
+
+	.check_btn{
+		display: block;
+		margin-left: 30px;
+		height: auto;
+		
+        position: absolute;
+        z-index: 2;
+	}
+    
+    .contenedorGeneral header {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		
+		left: -100%;
+		text-align: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		transition: all .5s;
+        z-index: 1;
+		
+	}
+
+    .contenedorGeneral header ul .encabezado .txt_child_one{
+		display: none;
+	}
+
+	.contenedorGeneral header .indices ul li{
+		display: block;
+		width: 100%;
+	}
+
+	.contenedorGeneral header .indices ul li a{
+		font-size: 20px;
+		
+
+	}
+
+    
+	.contenedorGeneral header .indices ul li a .flecha_derecha{
+		display: none;
+
+	}
+	.contenedorGeneral header .indices ul li a:hover, a.active{
+		background: none;
+		color: #0082e6;
+	}
+
+
+    .contenedorGeneral input[type="checkbox"]:checked ~ header{
+		left: 0;
+		
+	}
+
+}
+
+
 
 /*formulario*/
 
@@ -93,7 +241,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
 
@@ -121,7 +268,6 @@ body {
     font-weight: 400;
     font-size: 45px;
     position: relative;
-    
     left: -30%;
 }
 
@@ -133,6 +279,7 @@ body {
     border-top: 4px solid #000;
 
 }
+
 
 .contenedorGeneral .contenido .tarj .formulario .derecha{
     width: 50%;
@@ -157,6 +304,7 @@ body {
     left: 8px;
     
 }
+
 .contenedorGeneral .contenido .tarj .formulario .extra_img {
     display: block;
     font-size: 12px;
@@ -251,6 +399,142 @@ input::-webkit-inner-spin-button {
     border-radius: 20px;
 }
 
+@media (max-width: 500px){
+    .contenedorGeneral .contenido {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedorGeneral .contenido .tarj {
+        width: 90%;
+        padding: 10px;
+        margin-top: 30%;
+        margin-bottom: 20%;
+    }
+
+
+    .contenedorGeneral .contenido .tarj h1 {
+        left: 0;
+        font-size: 1.5em;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario .derecha{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario .izqu{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario p {
+        font-size: 1em;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario .elemento input[type="text"] , input[type="email"] , input[type="password"]{
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario  input[type="submit"] { 
+        position: inherit;
+
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario .descripcion { 
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario .ddl_categoria { 
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario input[type="number"]  { 
+        width: 45%;
+    }
+
+    .contenedorGeneral .contenido .tarj .errores {
+
+    }
+
+}
+
+
+@media (max-width: 800px) and (min-width:500px) {
+    .contenedorGeneral .contenido {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedorGeneral .contenido .tarj {
+        width: 80%;
+        padding: 10px;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+
+    .contenedorGeneral .contenido .tarj h1 {
+        left: 0;
+        font-size: 1.5em;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario .derecha{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario .izqu{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario p {
+        font-size: 1em;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario .elemento input[type="text"] , input[type="email"] , input[type="password"]{
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario  input[type="submit"] { 
+        position: inherit;
+
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario .descripcion { 
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario .ddl_categoria { 
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .contenedorGeneral .contenido .tarj .formulario input[type="number"]  { 
+        width: 45%;
+    }
+
+    .contenedorGeneral .contenido .tarj .errores {
+
+    }
+}
+
 /*Seccion de los text box dinamicos*/
 
 .contenedorGeneral .contenido .tarj .izqu input[type="text"] {
@@ -337,6 +621,18 @@ input::-webkit-inner-spin-button {
 .contenedorGeneral .contenido .tarj .izqu .elemento .image-preview__image{
     display: none;
     max-width: 25%;
+}
+
+@media (max-width: 500px){
+    .contenedorGeneral .contenido .tarj .izqu .elemento .image-preview__image{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) and (min-width:500px) {
+    .contenedorGeneral .contenido .tarj .izqu .elemento .image-preview__image{
+        max-width: 60%;
+    }
 }
 
 /*Succesfuly update popup */

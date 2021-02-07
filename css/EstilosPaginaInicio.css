@@ -120,10 +120,10 @@ header .derecha ul li a .icono {
 	display: none;
 }
 
-@media (max-with: 925px){
+@media (max-width: 925px){
 	header .logo {
 		max-width: 400px;
-		padding-left: 50px;
+		padding-left:0;
 	}
 	header .logo .nombre_header {
 		font-size: 20px;
@@ -136,7 +136,7 @@ header .derecha ul li a .icono {
 }
 
 /*Responsive for header*/
-@media (max-width: 500px){
+@media all and (max-width: 500px){
 	.check_btn{
 		display: block;
 		margin-right: 20px;
@@ -192,7 +192,7 @@ header .derecha ul li a .icono {
 
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) and (min-width:500px) {
 	.check_btn{
 		display: block;
 		margin-right: 20px;
@@ -374,7 +374,7 @@ header .derecha ul li a .icono {
 		margin-bottom: 10px;
 	}
 	.imagenes {
-		flex-direction: column;
+		flex-direction: row;
 		width: 100%;
 		margin-top: 10px;
 		
@@ -386,13 +386,14 @@ header .derecha ul li a .icono {
 		height: 60%;
 		margin: 100px 0 0 40%;
 		z-index: 1;
+		display: none;
 
 	}
 	.caja2{
-		width: 59%;
+		width: 90%;
 		height: 30%;
 		margin: 0;
-		margin-right: 140px;
+		
 		position: absolute;
 		z-index: 0;
 		
@@ -405,7 +406,8 @@ header .derecha ul li a .icono {
 }
 
 
-@media all and (max-width:800px){
+@media (max-width: 800px) and (min-width:500px) {
+
 	.hoja1 {
 		flex-direction: column;
 		height: 100vh;
@@ -462,7 +464,7 @@ header .derecha ul li a .icono {
 		z-index: 3;
 	}
 
-}
+} 
 
 
 
@@ -611,7 +613,7 @@ header .derecha ul li a .icono {
 }
 
 
-@media all and (max-width:800px){
+@media (max-width: 800px) and (min-width:500px) {
 	.persona .contenedor_persona {
 		flex-direction: column-reverse;
 		height: 95%;
@@ -643,7 +645,7 @@ header .derecha ul li a .icono {
 	.persona .sobremi a i {
 		font-size: 3em;
 	}
-}
+} 
 
 /*-Adress- section*/
 
@@ -742,7 +744,7 @@ header .derecha ul li a .icono {
 	
 }
 
-@media all and (max-width:800px){
+@media (max-width: 800px) and (min-width:500px) {
 	.ubicacion {
 		flex-direction: column;
 		height: 90%;
@@ -867,7 +869,8 @@ header .derecha ul li a .icono {
 
 }
 
-@media all and (max-width:800px){
+
+@media (max-width: 800px){
 	.seccion4 .hechos{
 		height: auto;
 	}
@@ -896,7 +899,7 @@ header .derecha ul li a .icono {
 	.seccion4 .hechos .boton_section4 .boton_explorar a {
 		font-size: 1.5rem;
 	}
-}
+} 
 
 
 /*Social media and contact part*/
@@ -1077,7 +1080,7 @@ header .derecha ul li a .icono {
 
 
 
-@media all and (max-width:800px){
+@media (max-width: 800px) and (min-width:500px) {
 
 	.seccion4 .contacto{
 		height: 80%;
@@ -1240,7 +1243,7 @@ footer .pie_pagina {
 }
 
 
-@media all and (max-width:800px){
+@media (max-width: 800px) and (min-width:500px) {
 
 	footer .texto_footer {
 		font-size: 1em;

@@ -11,7 +11,10 @@
 <body>
     
     <div class="contenedorGeneral">
-
+    <input type="checkbox" id="check" >
+			    <label for="check" class="check_btn">
+				    <i class="fas fa-bars"></i>
+			    </label>
     <?php include '../views/header_admin.html'; ?>
     
 
@@ -118,15 +121,7 @@
 
     	
         <script src="../js/jquery-3.5.1.min.js"></script>
-
-        
-    <script>
-        document.getElementById("close").addEventListener("click", function(){
-            document.querySelector(".contenedorGeneral .contenido .confirmation").style.display = "none";
-        })
-
-
-    </script>
+        <script src="../js/EditPanel.js"></script>
 
     <script>
     
