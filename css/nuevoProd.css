@@ -667,3 +667,21 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 
 }
+@media (max-width: 500px){
+    .contenedorGeneral .contenido .confirmation {
+        width: 60%;
+        height: 30%;
+        padding: 30px 10px;
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 800px) and (min-width:500px) {
+    .contenedorGeneral .contenido .confirmation {
+        width: 60%;
+        height: 30%;
+        padding: 30px 10px;
+        bottom: 50px;
+    }
+}
+

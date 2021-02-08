@@ -1,7 +1,7 @@
 <?php session_start();
 
 require '../funciones.php';
-$conexion = conexion('exvotos_laminas_mx', 'root', 'java0900');
+$conexion = conexion();
 
 
 
@@ -30,6 +30,8 @@ if(isset($_SESSION['usuario'])){
         $imgSize = $_FILES['my_image']['size']; //tamaño del archivo
         $tmp_name = $_FILES['my_image']['tmp_name']; //nombre temporal
         $error = $_FILES['my_image']['error']; //errores
+
+        
         
         if(isset($_POST['submit']) && isset($_FILES['my_image']))
         {
@@ -63,18 +65,6 @@ if(isset($_SESSION['usuario'])){
 
                         //Variable para saber cuantas casillas dinamicas hay
                         $number = count($_POST["name"]);
-
-
-
-
-
-                            /*impresion de datos*/ 
-
-                            // echo $nombre ."\n";
-                            // echo $Categoria ."\n";
-                            // echo $descripcion ."\n";
-                            // echo $precio ."\n";
-                            // echo $new_img_name . "\n";
 
                             //insertamos a la db los datos del formulario.
                             $stmt2 = $conexion->prepare('INSERT INTO product (idCategory, imgPath, workName, workPrice, workDescription) VALUES(:cat, :thumb, :nombre, :precio, :descrip)');

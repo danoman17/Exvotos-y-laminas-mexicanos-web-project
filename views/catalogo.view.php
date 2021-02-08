@@ -50,7 +50,7 @@
 
 			>
 				<div class="item-contenido">
-					<img src="img/<?php echo $producto_real['imgPath']; ?>" alt="">
+					<img src="img/<?php echo $producto_real['imgPath']; ?>" alt="" loading="lazy">
 				</div>
 
 				<div class="nombre-img">
@@ -66,7 +66,7 @@
 	<section class="overlay" id="overlay">
 		<div class="contenedor-img">
 			<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
-			<img src="" alt="">
+			<img src="" alt="" loading="lazy">
 		</div>
 
 		<div class="contenedor">
@@ -115,7 +115,7 @@
 
 			<div class="pie_pagina">
 				<p>
-					Copyright © 2021 Daniel Flores R. All rights reserved.
+				Copyright © 2021 Daniel Flores R & Christofer Rodríguez. All rights reserved.
 				</p>
 			</div>
 		</footer>

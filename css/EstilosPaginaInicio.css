@@ -192,7 +192,7 @@ header .derecha ul li a .icono {
 
 }
 
-@media (max-width: 800px) and (min-width:500px) {
+@media (max-width: 1024px) and (min-width:500px) {
 	.check_btn{
 		display: block;
 		margin-right: 20px;
@@ -276,7 +276,7 @@ header .derecha ul li a .icono {
 	padding: 60px;
 	text-align: center;
 	border-radius: 20px;
-	margin: 60px 0 0 200px;
+	margin: 60px 0 0 10%;
     background: rgba(0, 0, 0, 0.7);
 
 }
@@ -406,7 +406,7 @@ header .derecha ul li a .icono {
 }
 
 
-@media (max-width: 800px) and (min-width:500px) {
+@media (max-width: 1024px) and (min-width:500px) {
 
 	.hoja1 {
 		flex-direction: column;
@@ -552,7 +552,7 @@ header .derecha ul li a .icono {
 
 .persona .sobremi p {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 	margin-bottom: 10%;
 	color: #fff;
@@ -613,7 +613,7 @@ header .derecha ul li a .icono {
 }
 
 
-@media (max-width: 800px) and (min-width:500px) {
+@media (max-width: 1024px) and (min-width:500px) {
 	.persona .contenedor_persona {
 		flex-direction: column-reverse;
 		height: 95%;
@@ -744,7 +744,7 @@ header .derecha ul li a .icono {
 	
 }
 
-@media (max-width: 800px) and (min-width:500px) {
+@media (max-width: 1024px) and (min-width:500px) {
 	.ubicacion {
 		flex-direction: column;
 		height: 90%;
@@ -870,7 +870,7 @@ header .derecha ul li a .icono {
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 1024px){
 	.seccion4 .hechos{
 		height: auto;
 	}
@@ -954,7 +954,7 @@ header .derecha ul li a .icono {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 150px;
+	font-size: 140px;
 	color: #fff;
 	
 	
@@ -969,7 +969,7 @@ header .derecha ul li a .icono {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 150px;
+	font-size: 140px;
 	color: #fff;
 }
 .seccion4 .contacto .redes_sociales .contenedor_contacto .logo_red_insta {
@@ -981,7 +981,7 @@ header .derecha ul li a .icono {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 150px;
+	font-size: 140px;
 	color: #fff;
 }
 
@@ -1080,7 +1080,7 @@ header .derecha ul li a .icono {
 
 
 
-@media (max-width: 800px) and (min-width:500px) {
+@media (max-width: 1024px) and (min-width:500px) {
 
 	.seccion4 .contacto{
 		height: 80%;
@@ -1253,6 +1253,20 @@ footer .pie_pagina {
 	footer .pie_pagina {
 		text-align: center;
 		font-size: .8em;
+
+	}
+}
+
+@media all and (max-width: 500px) {
+
+	footer .texto_footer {
+		font-size: 1em;
+		height: auto;
+	}
+
+	footer .pie_pagina {
+		text-align: center;
+		font-size: .5em;
 
 	}
 }

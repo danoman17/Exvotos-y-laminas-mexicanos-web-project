@@ -418,7 +418,7 @@ header .derecha ul li a .icono {
 }
 
 .overlay img {
-	max-width: 100%;
+	max-width: 500px;
 }
 
 .overlay .contenedor {
@@ -473,6 +473,7 @@ top: 100px;
 @media (max-width: 500px){
 	.overlay img {
 		max-width: 280px;
+		margin-bottom: 40px;
 	}
 
 	.overlay.activo {
@@ -491,7 +492,7 @@ top: 100px;
 
 @media (max-width: 800px) and (min-width:500px) {
 	.overlay img {
-		max-width: 600px;
+		max-width: 500px;
 	}
 
 	.overlay.activo {

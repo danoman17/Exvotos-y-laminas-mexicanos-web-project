@@ -5,11 +5,11 @@
 
 
 #function to link the data base.
-function conexion($tabla,$usuario,$pass){
+function conexion(){
 
     try {
 
-        $conexion = new PDO("mysql:host=localhost;dbname=$tabla" , $usuario,$pass);
+        $conexion = new PDO("mysql:host=localhost;dbname=exvotos_laminas_mx" , "root","java0900");
         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         return $conexion;

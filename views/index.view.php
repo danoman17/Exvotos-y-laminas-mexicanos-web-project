@@ -16,12 +16,12 @@
 
 
 
-			<div class="seccion1" id="Primera-seccion">
+			<div class="seccion1" id="Primera-seccion" loading="lazy">
 
-			<div class="hoja1">
+			<div class="hoja1" loading="lazy">
 			<div class="intro" >
 				<div class="contenido_intro">
-					<h1>Exvotos y Láminas Mexicanos</h1>
+					<h1>Exvotos y Retablos Mexicanos</h1>
 					<p>
 						Se sabe que los exvotos son tan antiguos como la civilización egipcia y que al menos en nuestra historia se ha practicado 
 						desde épocas precolombinas, aunque no bajo la misma denominación. Se le llama exvoto, a  toda clase de ofrendas a los dioses,
@@ -33,8 +33,8 @@
 			</div>
 
 			<div class="imagenes">
-				<div class="caja1"></div>
-				<div class="caja2"></div>
+				<div class="caja1" loading="lazy"></div>
+				<div class="caja2" loading="lazy"></div>
 			</div>
 		</div>
 		
@@ -49,15 +49,14 @@
 				<div class="persona">
 
 					<div class="contenedor_persona">
-						<div class="imagen_persona"></div>
+						<div class="imagen_persona" loading="lazy"></div>
 
 						<div class="sobremi">
 							<h2>Sobre mí</h2>
 							<p>
-								Mary Pearson nació en Barnstaple, al sudoeste de Inglaterra en el año 1985. 
-								Se crió cerca del mar y cerca de dos parques nacionales, y su amor por el paisaje natural creció enormemente. 
-								A lo largo de su vida, Mary siempre se ha sentido fascinada por las imágenes y cómo se representa el mundo por medio de los ojos
-								 de otros, así que naturalmente, se sintió atraída por la fotografía.
+							Christopher Rodriguez Contreras es un pintor artesano de  Exvotos Mexicanos de forma autodidacta dando gracias de conocer este arte pictorico en el tianguis de antigüedades de la Lagunilla en la cuidad de Mexico.
+							 En cada Exvoto plasma una historia del Mexico contenporáneo con su particular estilo de pintar este arte popular mexicano.
+							Manteniendo vigente este noble trabajo de pintar  Milagros en el Mexico moderno.
 							</p>
 
 							<a href="" id="btn-2"><i class="fas fa-chevron-down"></i></a>
@@ -72,15 +71,13 @@
 				<div class="direccion">
 					<h2>UBICACIÓN</h2>
 					<p>
-						Av. Paseo de la Reforma, Juárez, Cuauhtémoc, 06500 Ciudad de México, CDMX
+						Estado de México
 					</p>
 				</div>
 
 				<div class="mapa">
 					
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6654076605945!2d-99.16814652076758!3d19.427020599180462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!
-						1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1609990884167!5m2!1ses-419!2smx" 
-						width="750" height="500" frameborder="0" style="border:3px solid ;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d963841.519989371!2d-100.16541703831818!3d19.325548650776344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8992c0eb0a3b%3A0xc2fef9be9fc5a857!2sEstado%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1612745947499!5m2!1ses-419!2smx" width="750" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 				</div>
 			</div>
@@ -88,7 +85,7 @@
 
 
 		<div class="seccion4">
-			<div class="hechos">
+			<div class="hechos" loading="lazy">
 				<div class="box">
 					<div class="contenido_hechos"><i class="fas fa-plane"></i></i><p>Envios a todo el mundo.</p></div>
 					<div class="contenido_hechos"><i class="fas fa-check"></i><p>Artesano Mexicano </p></div>
@@ -165,7 +162,7 @@
 
 			<div class="pie_pagina">
 				<p>
-					Copyright © 2021 Daniel Flores R. All rights reserved.
+					Copyright © 2021 Daniel Flores R & Christofer Rodríguez. All rights reserved.
 				</p>
 			</div>
 		</footer>

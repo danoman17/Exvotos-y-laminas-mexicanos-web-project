@@ -1,7 +1,7 @@
 <?php session_start();
 
 require '../funciones.php';
-$conexion = conexion('exvotos_laminas_mx', 'root', 'java0900');
+$conexion = conexion();
 
 
 if(isset($_SESSION['usuario'])){
