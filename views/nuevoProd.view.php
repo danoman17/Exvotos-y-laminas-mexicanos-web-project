@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/fdd2e8457c.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../css/nuevoProd.css">
+    <link rel="shortcut icon" type="image/jpg" href="../img/Em_icono.ico"/>
     <title>NuevoProd</title>
 </head>
 <body>

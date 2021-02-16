@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/fdd2e8457c.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/EstilosPaginaInicio.css">
+	<link rel="shortcut icon" type="image/jpg" href="img/Em_icono.ico"/>
 
 	<title>ExvotosMexicanos</title>
 </head>
@@ -54,9 +55,9 @@
 						<div class="sobremi">
 							<h2>Sobre mí</h2>
 							<p>
-							Christopher Rodriguez Contreras es un pintor artesano de  Exvotos Mexicanos de forma autodidacta dando gracias de conocer este arte pictorico en el tianguis de antigüedades de la Lagunilla en la cuidad de Mexico.
-							 En cada Exvoto plasma una historia del Mexico contenporáneo con su particular estilo de pintar este arte popular mexicano.
-							Manteniendo vigente este noble trabajo de pintar  Milagros en el Mexico moderno.
+							Christopher Rodriguez Contreras es un pintor artesano de  Exvotos Mexicanos de forma autodidacta dando gracias de conocer este arte pictórico en el tianguis de antigüedades de la Lagunilla en la cuidad de Mexico.
+							 En cada Exvoto plasma una historia del Mexico contemporáneo con su particular estilo de pintar este arte popular mexicano.
+							Manteniendo vigente este noble trabajo de pintar  Milagros en el México moderno.
 							</p>
 
 							<a href="" id="btn-2"><i class="fas fa-chevron-down"></i></a>
@@ -77,7 +78,7 @@
 
 				<div class="mapa">
 					
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d963841.519989371!2d-100.16541703831818!3d19.325548650776344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8992c0eb0a3b%3A0xc2fef9be9fc5a857!2sEstado%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1612745947499!5m2!1ses-419!2smx" width="750" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d963841.519989371!2d-100.16541703831818!3d19.325548650776344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8992c0eb0a3b%3A0xc2fef9be9fc5a857!2sEstado%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1612745947499!5m2!1ses-419!2smx" width="90%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 				</div>
 			</div>
@@ -89,7 +90,7 @@
 				<div class="box">
 					<div class="contenido_hechos"><i class="fas fa-plane"></i></i><p>Envios a todo el mundo.</p></div>
 					<div class="contenido_hechos"><i class="fas fa-check"></i><p>Artesano Mexicano </p></div>
-					<div class="contenido_hechos"><i class="fas fa-brain"></i><p>Personalizacion de Exvotos.</p></div>
+					<div class="contenido_hechos"><i class="fas fa-brain"></i><p>Personalización de Exvotos.</p></div>
 					<div class="contenido_hechos"><i class="fab fa-envira"></i><p>Ciudado del medio ambiente</p></div>
 				</div>
 

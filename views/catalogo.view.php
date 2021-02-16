@@ -9,6 +9,7 @@
 
 	
 	<link rel="stylesheet" type="text/css" href="css/catalogueStyles.css">
+	<link rel="shortcut icon" type="image/jpg" href="img/Em_icono.ico"/>
 	<title>Catalogo</title>
 </head>
 <body>

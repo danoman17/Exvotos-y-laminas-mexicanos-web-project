@@ -5,9 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 * {
-    margin: 0;
+	margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	image-rendering:-moz-crisp-edges;          /* Firefox        */
+image-rendering:-o-crisp-edges;            /* Opera          */
+image-rendering:-webkit-optimize-contrast; /* Safari         */
+image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+-ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
 }
 
 body {
